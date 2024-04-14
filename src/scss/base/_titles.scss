@@ -1,0 +1,67 @@
+.title {
+	font-family: var(--font-primary);
+	font-style: normal;
+	margin: 0;
+	&--huge {
+		font-size: responsive 26px 56px;
+		font-range: 375px 1024px;
+	}
+	&--big {
+		font-size: responsive 26px 48px;
+		font-range: 375px 1024px;
+	}
+	&--large {
+		font-size: responsive 24px 40px;
+		font-range: 1024px 1440px;
+	}
+	&--medium {
+		font-size: responsive 20px 24px;
+		font-range: 1024px 1440px;
+	}
+	&--small {
+		font-size: 20px;
+	}
+	&--tiny {
+		font-size: 18px;
+	}
+	&--dark {
+		color: var(--color-dark);
+	}
+	&--white {
+		color: var(--color-white);
+	}
+	&--w-extra-light {
+		font-weight: 200;
+	}
+	&--w-light {
+		font-weight: 300;
+	}
+	&--w-regular {
+		font-weight: 400;
+	}
+	&--w-medium {
+		font-weight: 500;
+	}
+	&--w-semi-bold {
+		font-weight: 600;
+	}
+	&--w-bold {
+		font-weight: bold;
+	}
+	&--w-extra-bold {
+		font-weight: 800;
+	}
+	&--w-black {
+		font-weight: 900;
+	}
+	&--uppercase {
+		text-transform: uppercase;
+	}
+}
+
+.title--indent {
+	margin: 0 0 50px;
+	@include tablet {
+		margin: 0 0 25px;
+	}
+}
