@@ -1,9 +1,30 @@
 .text {
-  font-family: var(--font-primary);
+  font-family: var(--font-inter);
   font-style: normal;
   margin: 0;
   &--white {
     color: var(--color-white);
+  }
+  &--gray-400 {
+    color: var(--color-gray-400);
+  }
+  &--gray-500 {
+    color: var(--color-gray-500);
+  }
+  &--gray-600 {
+    color: var(--color-gray-600);
+  }
+  &--gray-700 {
+    color: var(--color-gray-700);
+  }
+  &--light-gray {
+    color: var(--color-light-gray);
+  }
+  &--medium-gray {
+    color: var(--color-medium-gray);
+  }
+  &--gray {
+    color: var(--color-gray);
   }
   &--dark {
     color: var(--color-dark);
@@ -13,12 +34,8 @@
     font-range: 360px 1440px;
   }
   &--large {
-    font-size: responsive 18px 22px;
+    font-size: responsive 24px 29px;
     font-range: 360px 1440px;
-  }
-  &--pre-large {
-    font-size: responsive 18px 24px;
-    font-range: 360px 1024px;
   }
   &--medium {
     font-size: 18px;
@@ -26,35 +43,14 @@
   &--normal {
     font-size: 16px;
   }
-  &--pre-small {
+  &--small {
     font-size: 14px;
   }
-  &--small {
-    font-size: 12px;
-  }
   &--tiny {
-    font-size: 10px;
-  }
-  &--w-light {
-    font-weight: 300;
+    font-size: 12px;
   }
   &--w-regular {
     font-weight: normal;
-  }
-  &--w-medium {
-    font-weight: 500;
-  }
-  &--w-semi-bold {
-    font-weight: 600;
-  }
-  &--w-bold {
-    font-weight: 700;
-  }
-  &--w-extra-bold {
-    font-weight: 800;
-  }
-  &--w-black {
-    font-weight: 900;
   }
   &--italic {
     font-style: italic;

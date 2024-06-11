@@ -1,5 +1,5 @@
 {
-	"name": "base-template",
+	"name": "zspa",
 	"version": "1.0.0",
 	"author": "Georgii Filipov",
 	"license": "ISC",
@@ -54,10 +54,15 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+ssh://git@github.com/flashgrinder/base-template.git"
+		"url": "git+ssh://git@github.com/flashgrinder/zspa.git"
 	},
 	"bugs": {
-		"url": "https://github.com/flashgrinder/base-template/issues"
+		"url": "https://github.com/flashgrinder/zspa/issues"
 	},
-	"homepage": "https://github.com/flashgrinder/base-template#readme"
+	"homepage": "https://github.com/flashgrinder/zspa#readme",
+	"description": "- HTML,\r - SCSS,\r - Gulp,\r - JS",
+	"main": "gulpfile.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	}
 }

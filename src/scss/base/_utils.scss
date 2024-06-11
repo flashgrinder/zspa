@@ -31,8 +31,12 @@
 	text-align: center;
 }
 
-.d-flex {
-	display: flex;
+.d-flex-column {
+	flex-direction: column;
+}
+
+.flex-justify-sb {
+	justify-content: space-between;
 }
 
 .flex-center {

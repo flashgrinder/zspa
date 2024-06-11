@@ -1,22 +1,17 @@
 .title {
-	font-family: var(--font-primary);
+	font-family: var(--font-bebas);
 	font-style: normal;
 	margin: 0;
 	&--huge {
-		font-size: responsive 26px 56px;
+		font-size: responsive 48px 64px;
 		font-range: 375px 1024px;
 	}
 	&--big {
-		font-size: responsive 26px 48px;
+		font-size: responsive 32px 42px;
 		font-range: 375px 1024px;
 	}
-	&--large {
-		font-size: responsive 24px 40px;
-		font-range: 1024px 1440px;
-	}
 	&--medium {
-		font-size: responsive 20px 24px;
-		font-range: 1024px 1440px;
+		font-size: 24px;
 	}
 	&--small {
 		font-size: 20px;
@@ -27,32 +22,20 @@
 	&--dark {
 		color: var(--color-dark);
 	}
+	&--gray-700 {
+		color: var(--color-gray-700);
+	}
+	&--gray {
+		color: var(--color-gray);
+	}
 	&--white {
 		color: var(--color-white);
-	}
-	&--w-extra-light {
-		font-weight: 200;
-	}
-	&--w-light {
-		font-weight: 300;
 	}
 	&--w-regular {
 		font-weight: 400;
 	}
-	&--w-medium {
-		font-weight: 500;
-	}
-	&--w-semi-bold {
-		font-weight: 600;
-	}
 	&--w-bold {
 		font-weight: bold;
-	}
-	&--w-extra-bold {
-		font-weight: 800;
-	}
-	&--w-black {
-		font-weight: 900;
 	}
 	&--uppercase {
 		text-transform: uppercase;
@@ -60,8 +43,5 @@
 }
 
 .title--indent {
-	margin: 0 0 50px;
-	@include tablet {
-		margin: 0 0 25px;
-	}
+	margin: 0 0 35px;
 }
