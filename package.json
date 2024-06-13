@@ -51,6 +51,7 @@
 	],
 	"dependencies": {
 		"@splidejs/splide": "^4.1.4",
+		"@splidejs/splide-extension-grid": "^0.4.1",
 		"avif-webp-checker": "^1.0.0",
 		"swiper": "^11.0.6"
 	},
