@@ -31,6 +31,10 @@
 	text-align: center;
 }
 
+.d-flex {
+	display: flex;
+}
+
 .d-flex-column {
 	flex-direction: column;
 }
@@ -39,6 +43,10 @@
 	justify-content: space-between;
 }
 
-.flex-center {
+.flex-justify-center {
 	justify-content: center;
+}
+
+.flex-align-center {
+	align-items: center;
 }

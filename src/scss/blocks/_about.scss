@@ -1,0 +1,102 @@
+.about {
+  @include mobile {
+    background: linear-gradient(0deg, rgba(250, 246, 241, 0.7), rgba(250, 246, 241, 0.7)), linear-gradient(254.44deg, #FAF6F1 41.96%, rgba(250, 246, 241, 0) 83.62%);
+  }
+}
+
+.about__outer {
+  position: relative;
+  padding: 64px 121px;
+  background-image: url('../img/bg/about-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center left;
+  @include to(1200px) {
+    padding: 64px 30px;
+  }
+  @include mobile {
+    padding: 64px 0;
+    background-position: center;
+  }
+}
+
+.about__outer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(250, 246, 241, 0.7), rgba(250, 246, 241, 0.7)), linear-gradient(254.44deg, #FAF6F1 41.96%, rgba(250, 246, 241, 0) 83.62%);
+  user-select: none;
+}
+
+.about__inner {
+  gap: 24px;
+  @include mobile {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+}
+
+.about__heading {
+  position: relative;
+}
+
+.about__info {
+  position: relative;
+  max-width: 710px;
+  padding-right: 86px;
+  @include to(1200px) {
+    padding-right: 0;
+    max-width: 500px;
+  }
+  @include mobile {
+    max-width: 100%;
+    order: 1;
+  }
+}
+
+.about__action {
+  margin-top: 30px;
+}
+
+.about__button {
+  @include mobile {
+    width: 100%;
+  }
+}
+
+.about__list {
+  position: relative;
+}
+
+.about__item + .about__item {
+  margin-top: 32px;
+}
+
+.about__item  {
+  gap: 24px;
+  @include mobile {
+    gap: 14px;
+  }
+}
+
+.about__item-check {
+  background-color: var(--color-white);
+  border-radius: 50%;
+  width: 100%;
+  max-width: 72px;
+  height: 72px;
+  @include mobile {
+    height: 24px;
+    max-width: 24px;
+    background-color: transparent;
+  }
+}
+
+.about__item-check-icon {
+  stroke: var(--accent);
+  fill: transparent;
+}

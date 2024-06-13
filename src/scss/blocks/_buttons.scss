@@ -1,0 +1,48 @@
+.button {
+  font-family: var(--font-bebas);
+  font-weight: 700;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  font-style: normal;
+  text-decoration: none;
+  text-align: center;
+  font-size: 16px;
+  line-height: 16px;
+  border-radius: 4px;
+  padding: 21px;
+  z-index: 10;
+  outline: var(--accent);
+  background: transparent;
+  transition: background .250s ease, color .250s ease, border .250s ease;
+  overflow: hidden;
+}
+
+.button--primary {
+  background-color: var(--accent);
+  color: var(--color-white);
+  border: 1px solid transparent;
+}
+
+.button--primary:hover {
+  background-color: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+
+.button--primary:hover .button__icon-white {
+  stroke: var(--accent);
+}
+
+.button--primary-icon {
+  display: inline-flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+}
+
+.button--primary-icon .button__icon-white {
+  fill: transparent;
+  stroke: var(--color-white);
+  transition: stroke .250s ease;
+}

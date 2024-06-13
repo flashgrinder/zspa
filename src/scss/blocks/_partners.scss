@@ -1,0 +1,27 @@
+.partners__subtitle {
+  margin-top: 12px;
+}
+
+.partners__subtitle-accent {
+  color: var(--link-color);
+}
+
+.partners__items {
+  margin: 35px auto 0;
+  max-width: 1192px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(238px, 1fr));
+  @include mobile {
+    grid-template-columns: repeat(2, minmax(120px, 1fr));
+  }
+}
+
+.partners__item {
+  padding: 16px 24px;
+  filter: grayscale(1);
+  transition: filter var(--hover-time) ease;
+}
+
+.partners__item:hover {
+  filter: grayscale(0);
+}

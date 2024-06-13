@@ -14,6 +14,17 @@
 	width: 100%;
 }
 
+.container-1600 {
+	margin: 0 auto;
+	padding: 0 var(--container-padding);
+
+	max-width: var(--container-width-1600);
+	width: 100%;
+	@include mobile {
+		padding: 0;
+	}
+}
+
 .container-full {
 	padding: 0 var(--container-padding);
 	max-width: 100%;

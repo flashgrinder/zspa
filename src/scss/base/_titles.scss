@@ -10,6 +10,10 @@
 		font-size: responsive 32px 42px;
 		font-range: 375px 1024px;
 	}
+	&--large {
+		font-size: responsive 24px 28px;
+		font-range: 375px 1024px;
+	}
 	&--medium {
 		font-size: 24px;
 	}
@@ -30,6 +34,9 @@
 	}
 	&--white {
 		color: var(--color-white);
+	}
+	&--black {
+		color: var(--color-black);
 	}
 	&--w-regular {
 		font-weight: 400;
