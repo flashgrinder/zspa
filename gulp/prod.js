@@ -8,6 +8,7 @@ const webpHTML = require('gulp-webp-retina-html');
 const typograf = require('gulp-typograf');
 
 // SASS
+const postcss       = require('gulp-postcss');
 const sass = require('gulp-sass')(require('sass'));
 const sassGlob = require('gulp-sass-glob');
 const autoprefixer = require('gulp-autoprefixer');
@@ -94,6 +95,10 @@ gulp.task('html:prod', function () {
 });
 
 gulp.task('sass:prod', function () {
+	const prt = require('postcss-responsive-type');
+	const plugins = [
+		prt()
+	]
 	return gulp
 		.src('./src/scss/*.scss')
 		.pipe(changed('./prod/css/'))
@@ -103,6 +108,7 @@ gulp.task('sass:prod', function () {
 		.pipe(sassGlob())
 		.pipe(groupMedia())
 		.pipe(sass())
+		.pipe(postcss(plugins))
 		.pipe(
 			webImagesCSS({
 				mode: 'webp',
