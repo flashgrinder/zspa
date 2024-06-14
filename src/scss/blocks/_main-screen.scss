@@ -26,6 +26,9 @@
   position: relative;
   padding-top: 135px;
   padding-bottom: 180px;
+  @include mobile {
+    padding-bottom: 105px;
+  }
 }
 
 .main-screen__info {
