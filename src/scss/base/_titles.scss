@@ -26,6 +26,9 @@
 	&--tiny {
 		font-size: 18px;
 	}
+	&--accent {
+		color: var(--accent);
+	}
 	&--dark {
 		color: var(--color-dark);
 	}
