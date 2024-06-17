@@ -14,8 +14,13 @@ function gallerySlider () {
             perMove: 1,
             gap: '2px',
             autoplay: true,
-            // arrows: false,
             pagination: false,
+            classes: {
+                arrows: 'splide__arrows gallery__splide-arrows',
+                arrow : 'splide__arrow gallery__splide-arrow',
+                prev  : 'splide__arrow--prev gallery__splide-arrow--prev',
+                next  : 'splide__arrow--next gallery__splide-arrow--next',
+            },
             grid: {
                 dimensions: [ [ 1, 1 ], [ 2, 2 ], [ 2, 1 ], [ 1, 2 ], [ 2, 2 ], [ 3, 2 ] ],
                 gap: {

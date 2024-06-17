@@ -3,3 +3,26 @@
   height: 100%;
   object-fit: cover;
 }
+
+.gallery__splide-arrow.splide__arrow {
+  border-radius: 0;
+  background-color: var(--color-white);
+  padding: 32px 16px;
+  height: auto;
+  width: auto;
+  box-shadow: 0 4px 4px 0 #00000040;
+  @include mobile {
+    padding: 18px 5px;
+  }
+}
+
+.splide__arrow .gallery__arrow-icon {
+  fill: transparent;
+  stroke: var(--color-dark);
+  height: 24px;
+  width: 24px;
+}
+
+.gallery__splide-arrow.gallery__splide-arrow--prev .gallery__arrow-icon {
+  transform: rotate(0deg);
+}
