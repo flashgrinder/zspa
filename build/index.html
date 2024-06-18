@@ -13,25 +13,29 @@
 </head>
 
 <body>
-<!--<header class="header">-->
-<!--    <div class="container">-->
-<!--        <div class="header__row">-->
-<!--            <nav class="header__nav nav">-->
-<!--                <ul class="nav__list">-->
-<!--                    <li><a href="index.html" class="active">Главная</a></li>-->
-<!--		            <li><a href="docs.html">Документация</a></li>-->
-<!--                </ul>-->
-<!--            </nav>-->
-<!--            <button class="mobile-nav-btn">-->
-<!--                <div class="nav-icon"></div>-->
-<!--            </button>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</header>-->
-
 <header class="header">
-    <div class="header__top">
+    <div class="mobile-nav">
+        <div class="mobile-nav__outer container">
+            <div class="mobile-nav__inner d-flex flex-justify-sb flex-align-center">
+                <a href="/" class="mobile-nav__logo">
+                    <img src="./img/logo-mobile.svg" alt="" class="mobile-nav__logo-img">
+                </a>
+               <button class="mobile-nav__btn js-mobile-nav-btn">
+                    <div class="mobile-nav__btn-icon js-mobile-nav-icon"></div>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="header__top js-menu mobile-nav__menu">
         <div class="header__top-wrap container">
+            <div class="header__button-mobile-wrap">
+                <a href="/catalog/" class="header__button-mobile">
+                    В&#160;каталог
+                    <svg class="header__button-mobile-icon" width="16px" height="16px">
+                        <use href="./img/svgsprite/sprite.symbol.svg#chevron-right"></use>
+                    </svg>
+                </a>
+            </div>
             <nav class="header__top-menu">
                 <ul class="header__top-menu-list d-flex flex-justify-sb flex-align-center">
                     <li class="header__top-menu-item">
@@ -81,11 +85,91 @@
                     </li>
                 </ul>
             </nav>
+            <div class="header__mobile-bottom">
+                <div class="header__mobile-contacts">
+                    <div class="header__contacts d-flex">
+                        <div class="header__contact d-flex flex-align-center">
+                            <svg class="header__contact-icon" width="24px" height="24px">
+                                <use href="./img/svgsprite/sprite.symbol.svg#mail"></use>
+                            </svg>
+                            <div class="header__contact-info">
+                                <a href="mailto:Zakaz2@mail_ru" class="header__contact-link">
+                                    Zakaz2@mail_ru
+                                </a>
+                                <div class="header__contact-text text text--tiny text--dark text--w-regular">
+                                    Рассчитаем заявку за&#160;15 минут
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__contact d-flex flex-align-center">
+                            <svg class="header__contact-icon" width="24px" height="24px">
+                                <use href="./img/svgsprite/sprite.symbol.svg#phone"></use>
+                            </svg>
+                            <div class="header__contact-info">
+                                <a href="tel:+7 (495) 877-37-83" class="header__contact-link">
+                                    +7&#160;495&#160;877-37-83
+                                </a>
+                                <div class="header__contact-text text text--tiny text--dark text--w-regular">
+                                    Пн.-Пт.: 8:00&#160;&#8212; 19:00
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="javascript:;" class="header__button button button--primary">
+                    Получить КП
+                </a>
+            </div>
         </div>
     </div>
     <div class="header__body container">
-        <div class="header__main">
-
+        <div class="header__main d-flex flex-justify-sb flex-align-center">
+            <a href="/" class="header__logo">
+                <img src="./img/logo-header.svg" alt="" class="header__logo-img">
+            </a>
+            <div class="header__actions d-flex flex-align-center">
+                <form action="" class="header__form-search">
+                    <div class="header__form-field">
+                        <input class="header__form-input" type="text" value="" name="q" placeholder="Поиск" data-catalog-search-q="">
+                        <button class="header__form-btn" type="submit">
+                            <svg class="header__form-svg-search" width="16px" height="16px">
+                                <use href="./img/svgsprite/sprite.symbol.svg#search"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+                <a href="javascript:;" class="header__button button button--primary">
+                    Получить КП
+                </a>
+            </div>
+            <div class="header__contacts d-flex">
+                <div class="header__contact d-flex flex-align-center">
+                    <svg class="header__contact-icon" width="24px" height="24px">
+                        <use href="./img/svgsprite/sprite.symbol.svg#mail"></use>
+                    </svg>
+                    <div class="header__contact-info">
+                        <a href="mailto:Zakaz2@mail_ru" class="header__contact-link">
+                            Zakaz2@mail_ru
+                        </a>
+                        <div class="header__contact-text text text--tiny text--dark text--w-regular">
+                            Рассчитаем заявку за&#160;15 минут
+                        </div>
+                    </div>
+                </div>
+                <div class="header__contact d-flex flex-align-center">
+                    <svg class="header__contact-icon" width="24px" height="24px">
+                        <use href="./img/svgsprite/sprite.symbol.svg#phone"></use>
+                    </svg>
+                    <div class="header__contact-info">
+                        <a href="tel:+7 (495) 877-37-83" class="header__contact-link">
+                            +7&#160;495&#160;877-37-83
+                        </a>
+                        <div class="header__contact-text text text--tiny text--dark text--w-regular">
+                            Пн.-Пт.: 8:00&#160;&#8212; 19:00
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="header__bottom">
             <nav class="header__catalog-menu">
