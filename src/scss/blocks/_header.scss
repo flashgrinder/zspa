@@ -15,6 +15,13 @@
 //	}
 //}
 
+.header {
+	border-bottom: 1px solid #E0E0E0;
+	@include tablet {
+		border-bottom: none;
+	}
+}
+
 .header__top {
 	background-color: #FAF6F1;
 	padding: 16px 0;
