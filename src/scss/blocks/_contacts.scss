@@ -1,0 +1,40 @@
+.contacts {
+  padding-bottom: 64px;
+}
+
+.contacts__columns {
+  display: grid;
+  grid-template-columns: minmax(350px, 500px) minmax(400px, 1fr);
+  gap: 40px;
+  @include mobile {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contacts__item {
+  gap: 12px;
+}
+
+.contacts__item + .contacts__item {
+  margin-top: 32px;
+}
+
+.contacts__link-name {
+  margin-top: 10px;
+}
+
+.contacts__action {
+  margin-top: 32px;
+}
+
+.contacts__map-wrapper {
+  @include mobile {
+    order: -1;
+  }
+}
+
+.contacts__map-wrapper iframe {
+  @include mobile {
+    max-height: 300px;
+  }
+}

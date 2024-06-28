@@ -1,0 +1,41 @@
+.team {
+  background-color: #F9FAFB;
+}
+
+.team__items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 51px 80px;
+}
+
+.team__pic,
+.team__img {
+  width: 100%;
+  height: 296px;
+  max-height: 296px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.team__item-info {
+  text-align: center;
+  margin-top: 18px;
+}
+
+.team__name {
+  font-size: 22px;
+}
+
+.team__position,
+.team__contact {
+  margin-top: 8px;
+}
+
+.team__contact {
+  display: block;
+  transition: color var(--hover-time) ease;
+}
+
+.team__contact:hover {
+  color: var(--accent);
+}

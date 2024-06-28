@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ЗСПА</title>
+  <link rel="stylesheet" href="./css/main.css" />
+
+  <link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
+</head>
+
+<body class="quality-page">
+<header class="header">
+    <div class="mobile-nav">
+        <div class="mobile-nav__outer container">
+            <div class="mobile-nav__inner d-flex flex-justify-sb flex-align-center">
+                <a href="/" class="mobile-nav__logo">
+                    <img src="./img/logo-mobile.svg" alt="" class="mobile-nav__logo-img">
+                </a>
+               <button class="mobile-nav__btn js-mobile-nav-btn">
+                    <div class="mobile-nav__btn-icon js-mobile-nav-icon"></div>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="header__top js-menu mobile-nav__menu">
+        <div class="header__top-wrap container">
+            <div class="header__button-mobile-wrap">
+                <a href="/catalog/" class="header__button-mobile">
+                    В&#160;каталог
+                    <svg class="header__button-mobile-icon" width="16px" height="16px">
+                        <use href="./img/svgsprite/sprite.symbol.svg#chevron-right"></use>
+                    </svg>
+                </a>
+            </div>
+            <nav class="header__top-menu">
+                <ul class="header__top-menu-list d-flex flex-justify-sb flex-align-center">
+                    <li class="header__top-menu-item">
+                        <a href="" class="header__top-menu-link">
+                            О&#160;предприятии
+                        </a>
+                    </li>
+                    <li class="header__top-menu-item">
+                        <a href="" class="header__top-menu-link">
+                            Доставка и&#160;оплата
+                        </a>
+                    </li>
+                    <li class="header__top-menu-item">
+                        <a href="" class="header__top-menu-link">
+                            Акции
+                        </a>
+                    </li>
+                    <li class="header__top-menu-item">
+                        <a href="" class="header__top-menu-link">
+                            Контроль качества
+                        </a>
+                    </li>
+                    <li class="header__top-menu-item">
+                        <a href="" class="header__top-menu-link">
+                            Калькуляторы
+                        </a>
+                    </li>
+                    <li class="header__top-menu-item">
+                        <a href="" class="header__top-menu-link">
+                            Справочник ГОСТ, ОСТ, ТУ
+                        </a>
+                    </li>
+                    <li class="header__top-menu-item">
+                        <a href="" class="header__top-menu-link">
+                            Отгрузки
+                        </a>
+                    </li>
+                    <li class="header__top-menu-item">
+                        <a href="" class="header__top-menu-link">
+                            Статьи
+                        </a>
+                    </li>
+                    <li class="header__top-menu-item">
+                        <a href="" class="header__top-menu-link">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__mobile-bottom">
+                <div class="header__mobile-contacts">
+                    <div class="header__contacts d-flex">
+                        <div class="header__contact d-flex flex-align-center">
+                            <svg class="header__contact-icon" width="24px" height="24px">
+                                <use href="./img/svgsprite/sprite.symbol.svg#mail"></use>
+                            </svg>
+                            <div class="header__contact-info">
+                                <a href="mailto:Zakaz2@mail_ru" class="header__contact-link">
+                                    Zakaz2@mail_ru
+                                </a>
+                                <div class="header__contact-text text text--tiny text--dark text--w-regular">
+                                    Рассчитаем заявку за&#160;15 минут
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__contact d-flex flex-align-center">
+                            <svg class="header__contact-icon" width="24px" height="24px">
+                                <use href="./img/svgsprite/sprite.symbol.svg#phone"></use>
+                            </svg>
+                            <div class="header__contact-info">
+                                <a href="tel:+7 (495) 877-37-83" class="header__contact-link">
+                                    +7&#160;495&#160;877-37-83
+                                </a>
+                                <div class="header__contact-text text text--tiny text--dark text--w-regular">
+                                    Пн.-Пт.: 8:00&#160;&#8212; 19:00
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="javascript:;" class="header__button button button--primary">
+                    Получить КП
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="header__body container">
+        <div class="header__main d-flex flex-justify-sb flex-align-center">
+            <a href="/" class="header__logo">
+                <img src="./img/logo-header.svg" alt="" class="header__logo-img">
+            </a>
+            <div class="header__actions d-flex flex-align-center">
+                <form action="" class="header__form-search">
+                    <div class="header__form-field">
+                        <input class="header__form-input" type="text" value="" name="q" placeholder="Поиск" data-catalog-search-q="">
+                        <button class="header__form-btn" type="submit">
+                            <svg class="header__form-svg-search" width="16px" height="16px">
+                                <use href="./img/svgsprite/sprite.symbol.svg#search"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+                <a href="javascript:;" class="header__button button button--primary">
+                    Получить КП
+                </a>
+            </div>
+            <div class="header__contacts d-flex">
+                <div class="header__contact d-flex flex-align-center">
+                    <svg class="header__contact-icon" width="24px" height="24px">
+                        <use href="./img/svgsprite/sprite.symbol.svg#mail"></use>
+                    </svg>
+                    <div class="header__contact-info">
+                        <a href="mailto:Zakaz2@mail_ru" class="header__contact-link">
+                            Zakaz2@mail_ru
+                        </a>
+                        <div class="header__contact-text text text--tiny text--dark text--w-regular">
+                            Рассчитаем заявку за&#160;15 минут
+                        </div>
+                    </div>
+                </div>
+                <div class="header__contact d-flex flex-align-center">
+                    <svg class="header__contact-icon" width="24px" height="24px">
+                        <use href="./img/svgsprite/sprite.symbol.svg#phone"></use>
+                    </svg>
+                    <div class="header__contact-info">
+                        <a href="tel:+7 (495) 877-37-83" class="header__contact-link">
+                            +7&#160;495&#160;877-37-83
+                        </a>
+                        <div class="header__contact-text text text--tiny text--dark text--w-regular">
+                            Пн.-Пт.: 8:00&#160;&#8212; 19:00
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <nav class="header__catalog-menu">
+                <ul class="header__menu-list d-flex flex-justify-sb flex-align-center">
+                    <li class="header__menu-item">
+                        <a href="" class="header__menu-link">
+                            Отводы
+                        </a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="" class="header__menu-link">
+                            Тройники
+                        </a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="" class="header__menu-link">
+                            Переходы
+                        </a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="" class="header__menu-link">
+                            Фланцы
+                        </a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="" class="header__menu-link">
+                            Заглушки
+                        </a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="" class="header__menu-link">
+                            Днища
+                        </a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="" class="header__menu-link">
+                            Труба
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<main class="main quality-page">
+
+<div class="page-head">
+    <div class="page-head__body container">
+        <div class="page-head__breadcrumbs">
+            <div class="breadcrumbs">
+                <nav class="breadcrumbs__nav">
+                    <a href="/">Главная</a>
+                    <a href="/catalog/">Каталог</a>
+                    <a href="/catalog/zapchasti_dlya_turbin/">Трубы</a>
+                    <span>Труба бесшовная</span>
+                </nav>
+            </div>
+        </div>
+        <h1 class="page-head__heading title title--big title--gray-700 title--w-bold title--uppercase">
+            Контакты
+        </h1>
+    </div>
+</div>
+
+<div class="contacts">
+    <div class="contacts__body container">
+        <div class="contacts__columns">
+            <div class="contacts__info">
+                <div class="contacts__item d-flex flex-align-center">
+                    <div class="contacts__icon">
+                        <img src="./img/other/map-pin.svg" alt="" class="contacts__svg-icon" width="32px" height="32px">
+                    </div>
+                    <div class="contacts__wrap-name">
+                        <div class="contacts__name text text--medium text--gray text--w-regular">
+                            Адрес производства и&#160;склада
+                        </div>
+                        <div class="contacts__link-name title title--small title--black title--w-regular">
+                            Московская обл., г.&#160;Щелково,
+                            ул.&#160;Советская &#189;, к2
+                        </div>
+                    </div>
+                </div>
+                <div class="contacts__item d-flex flex-align-center">
+                    <div class="contacts__icon">
+                        <img src="./img/other/phone-contact.svg" alt="" class="contacts__svg-icon" width="32px" height="32px">
+                    </div>
+                    <div class="contacts__wrap-name">
+                        <div class="contacts__name text text--medium text--gray text--w-regular">
+                            Телефон
+                        </div>
+                        <a href="tel:+7 (495) 877-37-83" class="contacts__link-name title title--small title--black title--w-regular">
+                            +7&#160;495&#160;877-37-83
+                        </a>
+                    </div>
+                </div>
+                <div class="contacts__item d-flex flex-align-center">
+                    <div class="contacts__icon">
+                        <img src="./img/other/mail.svg" alt="" class="contacts__svg-icon" width="32px" height="32px">
+                    </div>
+                    <div class="contacts__wrap-name">
+                        <div class="contacts__name text text--medium text--gray text--w-regular">
+                            E-mail
+                        </div>
+                        <a href="mailto:zakaz2@elbows.ru" class="contacts__link-name title title--small title--black title--w-regular">
+                            zakaz2@elbows.ru
+                        </a>
+                    </div>
+                </div>
+                <div class="contacts__item d-flex flex-align-center">
+                    <div class="contacts__icon">
+                        <img src="./img/other/moon.svg" alt="" class="contacts__svg-icon" width="32px" height="32px">
+                    </div>
+                    <div class="contacts__wrap-name">
+                        <div class="contacts__name text text--medium text--gray text--w-regular">
+                            Режим работы
+                        </div>
+                        <div class="contacts__link-name title title--small title--black title--w-regular">
+                            Пн-Пт: 8:00&#160;&#8212; 19:00
+                        </div>
+                    </div>
+                </div>
+                <div class="contacts__action">
+                    <a href="" class="contacts__button button button--primary">
+                        Скачать реквизиты
+                    </a>
+                </div>
+            </div>
+            <div class="contacts__map-wrapper">
+                <a class="dg-widget-link"
+                   href="http://2gis.ru/moscow/firm/70000001037430989/center/38.003532886505134,55.91229698245902/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на&#160;карте Москвы</a><div class="dg-widget-link"><a href="http://2gis.ru/moscow/firm/70000001037430989/photos/70000001037430989/center/38.003532886505134,55.91229698245902/zoom/17?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=photos">Фотографии компании</a></div><div class="dg-widget-link"><a href="http://2gis.ru/moscow/center/38.003532,55.91207/zoom/16/routeTab/rsType/bus/to/38.003532,55.91207╎ЗСПА?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти проезд до&#160;ЗСПА</a></div><script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script><script charset="utf-8">new DGWidgetLoader({"width":"100%","height":460,"borderColor":"#a3a3a3","pos":{"lat":55.91229698245902,"lon":38.003532886505134,"zoom":16},"opt":{"city":"moscow"},"org":[{"id":"70000001037430989"}]});</script><noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в&#160;настройках вашего браузера.</noscript>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="team b-padding-80">
+    <div class="team__body container">
+        <h3 class="team__heading title title--big title--gray-700 title--w-bold title--uppercase title--indent">
+            С&#160;вами работают
+        </h3>
+        <div class="team__items">
+            <div class="team__item">
+                <picture class="team__pic">
+                    <img class="team__img" src="./img/other/team-1.png" alt="">
+                </picture>
+                <div class="team__item-info">
+                    <div class="team__name text text--gray-700 text--w-bold">
+                        Петр Петрович
+                    </div>
+                    <div class="team__position text text--normal text--gray-700 text--w-regular">
+                        Специалист отдела продаж
+                    </div>
+                    <a href="tel:+7 (495) 877-37-83" class="team__contact text text--normal text--gray-700 text--w-regular">
+                        +7&#160;495&#160;877-37-83
+                    </a>
+                    <a href="mailto:Zakaz2@mail.ru" class="team__contact text text--normal text--gray-700 text--w-regular">
+                        Zakaz2@mail.ru
+                    </a>
+                </div>
+            </div>
+            <div class="team__item">
+                <picture class="team__pic">
+                    <img class="team__img" src="./img/other/team-1.png" alt="">
+                </picture>
+                <div class="team__item-info">
+                    <div class="team__name text text--gray-700 text--w-bold">
+                        Петр Петрович
+                    </div>
+                    <div class="team__position text text--normal text--gray-700 text--w-regular">
+                        Специалист отдела продаж
+                    </div>
+                    <a href="tel:+7 (495) 877-37-83" class="team__contact text text--normal text--gray-700 text--w-regular">
+                        +7&#160;495&#160;877-37-83
+                    </a>
+                    <a href="mailto:Zakaz2@mail.ru" class="team__contact text text--normal text--gray-700 text--w-regular">
+                        Zakaz2@mail.ru
+                    </a>
+                </div>
+            </div>
+            <div class="team__item">
+                <picture class="team__pic">
+                    <img class="team__img" src="./img/other/team-1.png" alt="">
+                </picture>
+                <div class="team__item-info">
+                    <div class="team__name text text--gray-700 text--w-bold">
+                        Петр Петрович
+                    </div>
+                    <div class="team__position text text--normal text--gray-700 text--w-regular">
+                        Специалист отдела продаж
+                    </div>
+                    <a href="tel:+7 (495) 877-37-83" class="team__contact text text--normal text--gray-700 text--w-regular">
+                        +7&#160;495&#160;877-37-83
+                    </a>
+                    <a href="mailto:Zakaz2@mail.ru" class="team__contact text text--normal text--gray-700 text--w-regular">
+                        Zakaz2@mail.ru
+                    </a>
+                </div>
+            </div>
+            <div class="team__item">
+                <picture class="team__pic">
+                    <img class="team__img" src="./img/other/team-1.png" alt="">
+                </picture>
+                <div class="team__item-info">
+                    <div class="team__name text text--gray-700 text--w-bold">
+                        Петр Петрович
+                    </div>
+                    <div class="team__position text text--normal text--gray-700 text--w-regular">
+                        Специалист отдела продаж
+                    </div>
+                    <a href="tel:+7 (495) 877-37-83" class="team__contact text text--normal text--gray-700 text--w-regular">
+                        +7&#160;495&#160;877-37-83
+                    </a>
+                    <a href="mailto:Zakaz2@mail.ru" class="team__contact text text--normal text--gray-700 text--w-regular">
+                        Zakaz2@mail.ru
+                    </a>
+                </div>
+            </div>
+            <div class="team__item">
+                <picture class="team__pic">
+                    <img class="team__img" src="./img/other/team-1.png" alt="">
+                </picture>
+                <div class="team__item-info">
+                    <div class="team__name text text--gray-700 text--w-bold">
+                        Петр Петрович
+                    </div>
+                    <div class="team__position text text--normal text--gray-700 text--w-regular">
+                        Специалист отдела продаж
+                    </div>
+                    <a href="tel:+7 (495) 877-37-83" class="team__contact text text--normal text--gray-700 text--w-regular">
+                        +7&#160;495&#160;877-37-83
+                    </a>
+                    <a href="mailto:Zakaz2@mail.ru" class="team__contact text text--normal text--gray-700 text--w-regular">
+                        Zakaz2@mail.ru
+                    </a>
+                </div>
+            </div>
+            <div class="team__item">
+                <picture class="team__pic">
+                    <img class="team__img" src="./img/other/team-1.png" alt="">
+                </picture>
+                <div class="team__item-info">
+                    <div class="team__name text text--gray-700 text--w-bold">
+                        Петр Петрович
+                    </div>
+                    <div class="team__position text text--normal text--gray-700 text--w-regular">
+                        Специалист отдела продаж
+                    </div>
+                    <a href="tel:+7 (495) 877-37-83" class="team__contact text text--normal text--gray-700 text--w-regular">
+                        +7&#160;495&#160;877-37-83
+                    </a>
+                    <a href="mailto:Zakaz2@mail.ru" class="team__contact text text--normal text--gray-700 text--w-regular">
+                        Zakaz2@mail.ru
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer class="footer">
+    <div class="footer__top">
+        <div class="footer__top-wrap container">
+            <div class="footer__top-inner d-flex flex-justify-sb flex-align-center">
+                <div class="footer__logo">
+                    <img src="./img/logo-footer.svg" alt="ЗСПА" class="footer__logo-img">
+                </div>
+                <div class="footer__contacts d-flex flex-justify-sb">
+                    <div class="footer__contact">
+                        <div class="footer__contact-name text text--tiny text--white text--w-regular">
+                            Почта:
+                        </div>
+                        <a href="mailto:Zakaz2@mail_ru" class="footer__contact-link title title--small title--accent title--w-bold">
+                            Zakaz2@mail_ru
+                        </a>
+                    </div>
+                    <div class="footer__contact">
+                        <div class="footer__contact-name text text--tiny text--white text--w-regular">
+                            Адрес:
+                        </div>
+                        <div class="footer__contact-link title title--small title--accent title--w-bold">
+                            Московская область, г.&#160;Щелково,
+                            ул.&#160;Советская &#189;, к2
+                        </div>
+                    </div>
+                    <div class="footer__contact">
+                        <div class="footer__contact-name text text--tiny text--white text--w-regular">
+                            Пн.-Пт.: 8:00&#160;&#8212; 19:00
+                        </div>
+                        <a href="tel:+7 (495) 877-37-83" class="footer__contact-link title title--pre-large title--accent title--w-bold">
+                            +7&#160;495&#160;877-37-83
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__body container">
+        <div class="footer__main d-flex flex-justify-sb">
+            <div class="footer__menu footer__menu--catalog">
+                <div class="footer__menu-name title title--pre-large title--dark title--w-bold title--uppercase">
+                    Каталог
+                </div>
+                <ul class="footer__menu-list">
+                    <li class="footer__menu-item">
+                        <a href="" class="footer__menu-link">
+                            Отводы
+                        </a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="" class="footer__menu-link">
+                            Тройники
+                        </a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="" class="footer__menu-link">
+                            Переходы
+                        </a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="" class="footer__menu-link">
+                            Фланцы
+                        </a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="" class="footer__menu-link">
+                            Заглушки
+                        </a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="" class="footer__menu-link">
+                            Днища
+                        </a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="" class="footer__menu-link">
+                            ППУ/ВУС изоляция
+                        </a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="" class="footer__menu-link">
+                            Фланцевые фасонные части
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__menu">
+                <div class="footer__menu-name title title--pre-large title--dark title--w-bold title--uppercase">
+                    Компания
+                </div>
+                <ul class="footer__menu-list">
+                    <li class="footer__menu-item">
+                        <a href="" class="footer__menu-link">
+                            О&#160;предприятии
+                        </a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="" class="footer__menu-link">
+                            Контроль качества
+                        </a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="" class="footer__menu-link">
+                            Сертификаты
+                        </a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="" class="footer__menu-link">
+                            Отгрузки
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__menu">
+                <div class="footer__menu-name title title--pre-large title--dark title--w-bold title--uppercase">
+                    Покупателям
+                </div>
+                <ul class="footer__menu-list">
+                    <li class="footer__menu-item">
+                        <a href="" class="footer__menu-link">
+                            Доставка и&#160;оплата
+                        </a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="" class="footer__menu-link">
+                            Акции
+                        </a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="" class="footer__menu-link">
+                            Калькуляторы
+                        </a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="" class="footer__menu-link">
+                            Статьи
+                        </a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="" class="footer__menu-link">
+                            Справочник ГОСТ, ОСТ, ТУ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom d-flex flex-justify-sb flex-align-center">
+            <div class="footer__copyright text text--normal text--dark text--w-regular d-flex">
+                <svg class="footer__copyright-svg" width="26px" height="20px">
+                    <use href="./img/svgsprite/sprite.symbol.svg#copyright"></use>
+                </svg>
+                2024 ЗСПА
+            </div>
+            <a href="/policy" class="footer__policy text text--normal text--dark text--w-regular">
+                Политика конфиденциальности
+            </a>
+            <a href="https://saitcraft.ru" class="footer__create text text--normal text--dark text--w-regular" target="_blank">
+                Сайткрафт&#160;&#8212; маркетинг на&#160;промышленном рынке
+            </a>
+        </div>
+    </div>
+</footer>
+
+<script src="./js/index.bundle.js"></script>
+</body>
+</html>
