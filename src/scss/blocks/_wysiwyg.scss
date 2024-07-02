@@ -1,0 +1,99 @@
+.wysiwyg {
+  font-family: var(--font-inter);
+  color: var(--color-gray-600);
+}
+
+.wysiwyg h1,
+.wysiwyg h2,
+.wysiwyg h3,
+.wysiwyg h4,
+.wysiwyg h5,
+.wysiwyg h6 {
+  font-family: var(--font-bebas);
+  font-weight: bold;
+  margin: 0 0 24px;
+  color: var(--color-gray-700);
+}
+
+.wysiwyg h2 {
+  font-size: 34px;
+}
+
+.wysiwyg h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.wysiwyg h4 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.wysiwyg h6 {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: none;
+}
+
+.wysiwyg ul,
+.wysiwyg ol {
+  padding-left: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 0;
+}
+
+.wysiwyg ul li ~ li,
+.wysiwyg ol li ~ li {
+  margin-top: 20px;
+}
+
+.wysiwyg.wysiwyg--delivery ul li ~ li {
+  margin-top: 6px;
+}
+
+.wysiwyg ul li {
+  position: relative;
+  list-style-type: none;
+}
+
+.wysiwyg ul li::before {
+  content: url("data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMjI4QkU2IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciICB2aWV3Qm94PSIwIDAgMzAgMzAiIHdpZHRoPSIxNXB4IiBoZWlnaHQ9IjE1cHgiPjxwYXRoIGQ9Ik0gMjYuOTgwNDY5IDUuOTkwMjM0NCBBIDEuMDAwMSAxLjAwMDEgMCAwIDAgMjYuMjkyOTY5IDYuMjkyOTY4OCBMIDExIDIxLjU4NTkzOCBMIDQuNzA3MDMxMiAxNS4yOTI5NjkgQSAxLjAwMDEgMS4wMDAxIDAgMSAwIDMuMjkyOTY4OCAxNi43MDcwMzEgTCAxMC4yOTI5NjkgMjMuNzA3MDMxIEEgMS4wMDAxIDEuMDAwMSAwIDAgMCAxMS43MDcwMzEgMjMuNzA3MDMxIEwgMjcuNzA3MDMxIDcuNzA3MDMxMiBBIDEuMDAwMSAxLjAwMDEgMCAwIDAgMjYuOTgwNDY5IDUuOTkwMjM0NCB6Ii8+PC9zdmc+");
+  margin-right: 15px;
+  position: absolute;
+  left: -25px;
+}
+
+.wysiwyg.wysiwyg--delivery ul li {
+  list-style-type: disc;
+}
+
+.wysiwyg.wysiwyg--delivery ul li::before {
+  content: none;
+}
+
+.wysiwyg ul li > ul,
+.wysiwyg ol li > ol {
+  margin-top: 20px;
+}
+
+.wysiwyg p {
+  margin: 24px 0;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+
+.wysiwyg.wysiwyg--delivery p:first-child {
+  margin-top: 0;
+}
+
+.wysiwyg a {
+  text-decoration: underline;
+  color: var(--color-gray-600);
+  transition: color ease .2s;
+}
+
+.wysiwyg a:hover {
+  color: var(--accent);
+}
