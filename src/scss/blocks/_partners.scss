@@ -29,3 +29,30 @@
 .partners__item:hover {
   filter: grayscale(0);
 }
+
+.partners.partners--about-company {
+  border-top: none;
+}
+
+.partners.partners--about-company .partners__heading-wrap {
+  gap: 24px;
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
+.partners.partners--about-company .partners__subtitle {
+  max-width: 340px;
+  @include mobile {
+    max-width: 100%;
+  }
+}
+
+.partners.partners--about-company .partners__items {
+  margin: 70px auto 0;
+  max-width: 100%;
+}
+
+.partners.partners--about-company .partners__item {
+  filter: grayscale(0);
+}

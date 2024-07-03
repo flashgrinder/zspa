@@ -1,0 +1,58 @@
+.about-company {
+  position: relative;
+  background: url("../img/bg/main-screen-bg.png") no-repeat center;
+  background-size: cover;
+  padding-top: 32px;
+  padding-bottom: 285px;
+  @include mobile {
+    padding-bottom: 185px;
+  }
+}
+
+.about-company::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #0A1A297A;
+  user-select: none;
+  pointer-events: none;
+}
+
+.about-company__breadcrumbs,
+.about-company__heading,
+.about-company__items {
+  position: relative;
+}
+
+
+.about-company__breadcrumbs {
+  color: var(--color-white);
+}
+
+.about-company .breadcrumbs a,
+.about-company .breadcrumbs span {
+  color: inherit;
+}
+
+.about-company__items {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 46px;
+  margin-top: 142px;
+  @include mobile {
+    margin-top: 60px;
+  }
+}
+
+.about-company__item-description {
+  margin-top: 55px;
+  font-size: 20px;
+  @include mobile {
+    margin-top: 15px;
+    font-size: 16px;
+  }
+}
