@@ -1,0 +1,44 @@
+.manual {
+  padding-bottom: 100px;
+}
+
+.manual__table {
+  gap: 12px;
+}
+
+.manual__table + .manual__table {
+  margin-top: 12px;
+}
+
+.manual__th {
+  padding: 24px 60px 24px 12px;
+  background-color: #F9FAFB;
+  gap: 20px;
+}
+
+.manual__tr {
+  padding: 14px 73px 5px 12px;
+  gap: 20px;
+}
+
+.manual__tr + .manual__tr {
+  border-top: 1px solid #EDEDED;
+}
+
+.manual__tr-download {
+  @include mobile {
+    max-width: 42px;
+    width: 100%;
+  }
+}
+
+.manual__svg-icon-download {
+  padding: 5px 5px 8px 5px;
+  border-radius: 4px;
+  background-color: transparent;
+  transition: background-color var(--hover-time) ease;
+}
+
+.manual__svg-icon-download:hover {
+  background-color: #EFEFEF;
+}
