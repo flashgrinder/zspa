@@ -1,0 +1,82 @@
+.reviews__photo {
+  width: 100%;
+  max-width: 131px;
+  height: 100%;
+  max-height: 188px;
+  object-fit: cover;
+  @include mobileXS {
+    max-height: 263px;
+    max-width: 183px;
+  }
+}
+
+.reviews__splide-slide {
+  display: flex;
+  gap: 24px;
+  @include mobileXS {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.reviews__slide-excerpt {
+  @include mobileXS {
+    display: none;
+  }
+}
+
+.reviews__slide-company {
+  margin-top: 24px;
+}
+
+.reviews__slide-name {
+  margin-top: 10px;
+}
+
+.reviews__slide-company,
+.reviews__slide-name {
+  @include mobileXS {
+    text-align: center;
+  }
+}
+
+.reviews__splide-arrow.splide__arrow {
+  border-radius: 0;
+  background-color: transparent;
+  padding: 0;
+  height: auto;
+  width: auto;
+}
+
+.splide__arrow .reviews__arrow-icon {
+  fill: transparent;
+  stroke: var(--color-dark);
+  height: 24px;
+  width: 24px;
+}
+
+.reviews__splide-arrow.reviews__splide-arrow--prev .reviews__arrow-icon {
+  transform: rotate(0deg);
+}
+
+.reviews__splide-arrow.splide__arrow--next {
+  right: -2em;
+  @include mobileXS {
+    right: 1em;
+  }
+}
+
+.reviews__splide-arrow.splide__arrow--prev {
+  left: -2em;
+  @include mobileXS {
+    left: 1em;
+  }
+}
+
+.reviews__splide-pagination.splide__pagination {
+  bottom: -50px;
+  gap: 14px;
+}
+.reviews__splide-pagination.splide__pagination .splide__pagination__page.is-active {
+  background: var(--accent);
+}

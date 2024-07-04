@@ -3,6 +3,7 @@ import articlesSlider from './modules/articles-slider';
 import gallerySlider from "./modules/gallery-slider";
 import zoomImg from "./modules/zoomImg";
 import customTabs from "./modules/tabs";
+import reviewsSlider from "./modules/reviews";
 
 document.addEventListener('DOMContentLoaded', ()=> {
 
@@ -12,6 +13,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
     articlesSlider();
     zoomImg();
     customTabs();
+    reviewsSlider();
 
 })
 
