@@ -1,0 +1,39 @@
+.shipment {
+  @include mobile {
+    padding-bottom: 30px;
+  }
+}
+
+.shipment__cols {
+  display: grid;
+  grid-template-columns: minmax(400px, 1fr) minmax(400px, 1fr);
+  gap: 48px;
+  align-items: center;
+  @include mobile {
+    grid-template-columns: 1fr;
+  }
+}
+
+.shipment__list {
+  padding-left: 36px;
+}
+
+.shipment__item {
+  position: relative;
+}
+
+.shipment__item::before {
+  content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjUiIHZpZXdCb3g9IjAgMCAyNCAyNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIwIDcuNUw5IDE4LjVMNCAxMy41IiBzdHJva2U9IiMzQUFGQTkiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cjwvc3ZnPgo=");
+  margin-right: 15px;
+  position: absolute;
+  left: -36px;
+  top: -2px;
+}
+
+.shipment__item + .shipment__item {
+  margin-top: 24px;
+}
+
+.shipment__description {
+  margin-top: 30px;
+}

@@ -50,3 +50,14 @@
 .flex-align-center {
 	align-items: center;
 }
+
+.b-padding-80 {
+	padding: var(--padding-block-80);
+	@include mobile {
+		padding: 48px 0;
+	}
+}
+
+.b-padding-64 {
+	padding: var(--padding-block-64);
+}

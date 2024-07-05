@@ -1,0 +1,94 @@
+.compound {
+  padding-bottom: 0;
+  @include mobile {
+    background-color: #F9FAFB;
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+
+.compound__th,
+.compound__tr {
+  display: grid;
+  grid-template-columns: 64px 1fr 240px 240px;
+  align-items: center;
+}
+
+.compound__th-standard,
+.compound__tr-standard,
+.compound__th-quantity,
+.compound__tr-quantity {
+  text-align: center;
+}
+
+.compound__th {
+  padding: 27px 12px 23px;
+  background-color: #F9FAFB;
+}
+
+.compound__tr {
+  padding: 16px 12px 12px;
+  @include mobile {
+    display: block;
+    padding: 0;
+  }
+}
+
+.compound__tr + .compound__tr {
+  @include mobile {
+    margin-top: 24px;
+  }
+}
+
+.compound__tr:nth-child(odd) {
+  background-color: #F9FAFB;
+  @include mobile {
+    background-color: transparent;
+  }
+}
+
+.compound__tr-name {
+  @include mobile {
+    font-weight: bold;
+    font-size: 18px;
+  }
+}
+
+.compound__th,
+.compound__tr-num {
+  @include mobile {
+    display: none;
+  }
+}
+
+.compound__name-mobile {
+  display: none;
+  @include mobile {
+    display: block;
+  }
+}
+
+.compound__tr-standard,
+.compound__tr-quantity {
+  @include mobile {
+    display: flex;
+    background-color: var(--color-white);
+  }
+}
+
+.compound__tr-standard {
+  @include mobile {
+    margin-top: 10px;
+  }
+}
+
+.compound__name-mobile,
+.compound__name {
+  @include mobile {
+    width: 50%;
+    text-align: left;
+    padding: 12px;
+    border: 1px solid #CCD2E3;
+    font-size: 14px;
+  }
+}
