@@ -2,6 +2,18 @@
   padding-bottom: 70px;
 }
 
+.goods__stock-action {
+  padding: 53px 12px;
+  text-align: center;
+  background: url("../img/bg/stock-bg.png") no-repeat center;
+  background-size: cover;
+  border-radius: 3px;
+}
+
+.goods__tabs-wrapper {
+  margin-top: 32px;
+}
+
 .goods__th,
 .goods__tr {
   display: grid;
