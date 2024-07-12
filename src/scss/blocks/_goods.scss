@@ -1,0 +1,109 @@
+.goods {
+  padding-bottom: 70px;
+}
+
+.goods__th,
+.goods__tr {
+  display: grid;
+  grid-template-columns: 48px 1fr 180px 180px 180px 200px;
+  align-items: center;
+}
+
+.goods__th-quantity,
+.goods__th-old-price,
+.goods__th-new-price,
+.goods__th-order,
+.goods__tr-quantity,
+.goods__tr-old-price,
+.goods__tr-new-price,
+.goods__tr-order {
+  text-align: center;
+}
+
+.goods__th {
+  padding: 27px 12px 23px;
+  background-color: #F9FAFB;
+}
+
+.goods__tr {
+  padding: 16px 12px 12px;
+  transition: background-color var(--hover-time) ease;
+  @include mobile {
+    padding: 0;
+  }
+}
+
+.goods__tr:hover {
+  background-color: #F9FAFB;
+  @include mobile {
+    background-color: transparent;
+  }
+}
+
+.goods__tr + .goods__tr {
+  @include mobile {
+    margin-top: 30px;
+  }
+}
+
+
+.goods__name-mobile {
+  display: none;
+  @include mobile {
+    display: block;
+    font-weight: bold;
+  }
+}
+
+.goods__tr-button {
+  padding: 16px 24px;
+}
+
+.goods__th, 
+.goods__tr-num {
+  @include mobile {
+    display: none;
+  }
+}
+
+.goods__tr {
+  @include mobile {
+    display: block;
+  }
+}
+
+.goods__tr-quantity,
+.goods__tr-old-price,
+.goods__tr-new-price {
+  @include mobile {
+    display: flex;
+  }
+}
+
+.goods__name-mobile,
+.goods__name {
+  @include mobile {
+    width: 50%;
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #CCD2E3;
+  }
+}
+
+.goods__tr-name {
+  @include mobile {
+    font-weight: bold;
+  }
+}
+
+.goods__tr-quantity {
+  @include mobile {
+    margin-top: 10px;
+  }
+}
+
+.goods__tr-order {
+  @include mobile {
+    margin-top: 15px;
+  }
+}

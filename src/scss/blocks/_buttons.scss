@@ -47,3 +47,15 @@
   stroke: var(--color-white);
   transition: stroke .250s ease;
 }
+
+.button--secondary {
+  background-color: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+
+.button--secondary:hover {
+  background-color: var(--accent);
+  color: var(--color-white);
+  border: 1px solid var(--accent);
+}

@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ЗСПА</title>
+  <link rel="stylesheet" href="./css/main.css" />
+
+  <link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
+</head>
+
+<body class="quality-page">
+<header class="header">
+    <div class="mobile-nav">
+        <div class="mobile-nav__outer container">
+            <div class="mobile-nav__inner d-flex flex-justify-sb flex-align-center">
+                <a href="/" class="mobile-nav__logo">
+                    <img src="./img/logo-mobile.svg" alt="" class="mobile-nav__logo-img">
+                </a>
+               <button class="mobile-nav__btn js-mobile-nav-btn">
+                    <div class="mobile-nav__btn-icon js-mobile-nav-icon"></div>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="header__top js-menu mobile-nav__menu">
+        <div class="header__top-wrap container">
+            <div class="header__button-mobile-wrap">
+                <a href="/catalog/" class="header__button-mobile">
+                    В&#160;каталог
+                    <svg class="header__button-mobile-icon" width="16px" height="16px">
+                        <use href="./img/svgsprite/sprite.symbol.svg#chevron-right"></use>
+                    </svg>
+                </a>
+            </div>
+            <nav class="header__top-menu">
+                <ul class="header__top-menu-list d-flex flex-justify-sb flex-align-center">
+                    <li class="header__top-menu-item">
+                        <a href="" class="header__top-menu-link">
+                            О&#160;предприятии
+                        </a>
+                    </li>
+                    <li class="header__top-menu-item">
+                        <a href="" class="header__top-menu-link">
+                            Доставка и&#160;оплата
+                        </a>
+                    </li>
+                    <li class="header__top-menu-item">
+                        <a href="" class="header__top-menu-link">
+                            Акции
+                        </a>
+                    </li>
+                    <li class="header__top-menu-item">
+                        <a href="" class="header__top-menu-link">
+                            Контроль качества
+                        </a>
+                    </li>
+                    <li class="header__top-menu-item">
+                        <a href="" class="header__top-menu-link">
+                            Калькуляторы
+                        </a>
+                    </li>
+                    <li class="header__top-menu-item">
+                        <a href="" class="header__top-menu-link">
+                            Справочник ГОСТ, ОСТ, ТУ
+                        </a>
+                    </li>
+                    <li class="header__top-menu-item">
+                        <a href="" class="header__top-menu-link">
+                            Отгрузки
+                        </a>
+                    </li>
+                    <li class="header__top-menu-item">
+                        <a href="" class="header__top-menu-link">
+                            Статьи
+                        </a>
+                    </li>
+                    <li class="header__top-menu-item">
+                        <a href="" class="header__top-menu-link">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__mobile-bottom">
+                <div class="header__mobile-contacts">
+                    <div class="header__contacts d-flex">
+                        <div class="header__contact d-flex flex-align-center">
+                            <svg class="header__contact-icon" width="24px" height="24px">
+                                <use href="./img/svgsprite/sprite.symbol.svg#mail"></use>
+                            </svg>
+                            <div class="header__contact-info">
+                                <a href="mailto:Zakaz2@mail_ru" class="header__contact-link">
+                                    Zakaz2@mail_ru
+                                </a>
+                                <div class="header__contact-text text text--tiny text--dark text--w-regular">
+                                    Рассчитаем заявку за&#160;15 минут
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__contact d-flex flex-align-center">
+                            <svg class="header__contact-icon" width="24px" height="24px">
+                                <use href="./img/svgsprite/sprite.symbol.svg#phone"></use>
+                            </svg>
+                            <div class="header__contact-info">
+                                <a href="tel:+7 (495) 877-37-83" class="header__contact-link">
+                                    +7&#160;495&#160;877-37-83
+                                </a>
+                                <div class="header__contact-text text text--tiny text--dark text--w-regular">
+                                    Пн.-Пт.: 8:00&#160;&#8212; 19:00
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="javascript:;" class="header__button button button--primary">
+                    Получить КП
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="header__body container">
+        <div class="header__main d-flex flex-justify-sb flex-align-center">
+            <a href="/" class="header__logo">
+                <img src="./img/logo-header.svg" alt="" class="header__logo-img">
+            </a>
+            <div class="header__actions d-flex flex-align-center">
+                <form action="" class="header__form-search">
+                    <div class="header__form-field">
+                        <input class="header__form-input" type="text" value="" name="q" placeholder="Поиск" data-catalog-search-q="">
+                        <button class="header__form-btn" type="submit">
+                            <svg class="header__form-svg-search" width="16px" height="16px">
+                                <use href="./img/svgsprite/sprite.symbol.svg#search"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+                <a href="javascript:;" class="header__button button button--primary">
+                    Получить КП
+                </a>
+            </div>
+            <div class="header__contacts d-flex">
+                <div class="header__contact d-flex flex-align-center">
+                    <svg class="header__contact-icon" width="24px" height="24px">
+                        <use href="./img/svgsprite/sprite.symbol.svg#mail"></use>
+                    </svg>
+                    <div class="header__contact-info">
+                        <a href="mailto:Zakaz2@mail_ru" class="header__contact-link">
+                            Zakaz2@mail_ru
+                        </a>
+                        <div class="header__contact-text text text--tiny text--dark text--w-regular">
+                            Рассчитаем заявку за&#160;15 минут
+                        </div>
+                    </div>
+                </div>
+                <div class="header__contact d-flex flex-align-center">
+                    <svg class="header__contact-icon" width="24px" height="24px">
+                        <use href="./img/svgsprite/sprite.symbol.svg#phone"></use>
+                    </svg>
+                    <div class="header__contact-info">
+                        <a href="tel:+7 (495) 877-37-83" class="header__contact-link">
+                            +7&#160;495&#160;877-37-83
+                        </a>
+                        <div class="header__contact-text text text--tiny text--dark text--w-regular">
+                            Пн.-Пт.: 8:00&#160;&#8212; 19:00
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <nav class="header__catalog-menu">
+                <ul class="header__menu-list d-flex flex-justify-sb flex-align-center">
+                    <li class="header__menu-item">
+                        <a href="" class="header__menu-link">
+                            Отводы
+                        </a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="" class="header__menu-link">
+                            Тройники
+                        </a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="" class="header__menu-link">
+                            Переходы
+                        </a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="" class="header__menu-link">
+                            Фланцы
+                        </a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="" class="header__menu-link">
+                            Заглушки
+                        </a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="" class="header__menu-link">
+                            Днища
+                        </a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="" class="header__menu-link">
+                            Труба
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<main class="main quality-page">
+
+<div class="page-head">
+    <div class="page-head__body container">
+        <div class="page-head__breadcrumbs">
+            <div class="breadcrumbs">
+                <nav class="breadcrumbs__nav">
+                    <a href="/">Главная</a>
+                    <a href="/catalog/">Каталог</a>
+                    <a href="/catalog/zapchasti_dlya_turbin/">Трубы</a>
+                    <span>Труба бесшовная</span>
+                </nav>
+            </div>
+        </div>
+        <h1 class="page-head__heading title title--big title--gray-700 title--w-bold">
+            Акции и&#160;спецпредложения
+        </h1>
+    </div>
+</div>
+
+<section class="goods">
+    <div class="goods__body container">
+        <div class="goods__inner">
+            <div class="goods__tabs tabs">
+                <div class="goods__tabs-buttons tabs__buttons">
+                    <h3 class="goods__tabs-button tabs__button title title--gray-700 title--w-bold is-active"
+                        data-tab-trigger="1">
+                        Отводы
+                    </h3>
+                    <h3 class="goods__tabs-button tabs__button title title--gray-700 title--w-bold"
+                        data-tab-trigger="2">
+                        Тройники
+                    </h3>
+                </div>
+                <div class="goods__tabs-wrapper tabs__wrapper">
+                    <div class="goods__tabs-content tabs__content is-open" data-tab-content="1">
+                        <div class="goods__table d-flex d-flex-column">
+                            <div class="goods__th text text--normal text--gray-700 text--w-bold">
+                                <div class="goods__th-num text text--normal text--gray-700 text--w-bold">
+                                    №
+                                </div>
+                                <div class="goods__th-name text text--normal text--gray-700 text--w-bold">
+                                    Наименование товара
+                                </div>
+                                <div class="goods__th-quantity text text--normal text--gray-700 text--w-bold">
+                                    В&#160;наличии
+                                </div>
+                                <div class="goods__th-old-price text text--normal text--gray-700 text--w-bold">
+                                    Старая цена
+                                </div>
+                                <div class="goods__th-new-price text text--normal text--gray-700 text--w-bold">
+                                    Новая цена
+                                </div>
+                                <div class="goods__th-order text text--normal text--gray-700 text--w-bold">
+                                    Заказать
+                                </div>
+                            </div>
+                            <div class="goods__tr">
+                                <div class="goods__tr-num text text--normal text--gray-700 text--w-regular">
+                                    1
+                                </div>
+                                <div class="goods__tr-name text text--normal text--gray-700 text--w-regular">
+                                    Отвод сталь крутоизогнутый 90гр бесшовный ГОСТ 17375-2001
+                                </div>
+                                <div class="goods__tr-quantity text text--normal text--gray-700 text--w-regular">
+                                    <div class="goods__name-mobile">
+                                        В&#160;наличии
+                                    </div>
+                                    <div class="goods__name">
+                                        54
+                                    </div>
+                                </div>
+                                <div class="goods__tr-old-price text text--normal text--gray-700 text--w-regular">
+                                    <div class="goods__name-mobile">
+                                        Старая цена
+                                    </div>
+                                    <div class="goods__name">
+                                        155 000
+                                    </div>
+                                </div>
+                                <div class="goods__tr-new-price text text--normal text--gray-700 text--w-regular">
+                                    <div class="goods__name-mobile">
+                                        Новая цена
+                                    </div>
+                                    <div class="goods__name">
+                                        130 000
+                                    </div>
+                                </div>
+                                <div class="goods__tr-order">
+                                    <a href="javascript:;" class="goods__tr-button button button--secondary">
+                                        Заказать
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="goods__tr">
+                                <div class="goods__tr-num text text--normal text--gray-700 text--w-regular">
+                                    2
+                                </div>
+                                <div class="goods__tr-name text text--normal text--gray-700 text--w-regular">
+                                    Отвод сталь крутоизогнутый 190гр бесшовный ГОСТ 17375-2002
+                                </div>
+                                <div class="goods__tr-quantity text text--normal text--gray-700 text--w-regular">
+                                    <div class="goods__name-mobile">
+                                        В&#160;наличии
+                                    </div>
+                                    <div class="goods__name">
+                                        6456
+                                    </div>
+                                </div>
+                                <div class="goods__tr-old-price text text--normal text--gray-700 text--w-regular">
+                                    <div class="goods__name-mobile">
+                                        Старая цена
+                                    </div>
+                                    <div class="goods__name">
+                                        145 000
+                                    </div>
+                                </div>
+                                <div class="goods__tr-new-price text text--normal text--gray-700 text--w-regular">
+                                    <div class="goods__name-mobile">
+                                        Новая цена
+                                    </div>
+                                    <div class="goods__name">
+                                        120 000
+                                    </div>
+                                </div>
+                                <div class="goods__tr-order">
+                                    <a href="javascript:;" class="goods__tr-button button button--secondary">
+                                        Заказать
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="goods__tr">
+                                <div class="goods__tr-num text text--normal text--gray-700 text--w-regular">
+                                    3
+                                </div>
+                                <div class="goods__tr-name text text--normal text--gray-700 text--w-regular">
+                                    Отвод сталь крутоизогнутый 290гр бесшовный ГОСТ 17375-2014
+                                </div>
+                                <div class="goods__tr-quantity text text--normal text--gray-700 text--w-regular">
+                                    <div class="goods__name-mobile">
+                                        В&#160;наличии
+                                    </div>
+                                    <div class="goods__name">
+                                        456
+                                    </div>
+                                </div>
+                                <div class="goods__tr-old-price text text--normal text--gray-700 text--w-regular">
+                                    <div class="goods__name-mobile">
+                                        Старая цена
+                                    </div>
+                                    <div class="goods__name">
+                                        255 000
+                                    </div>
+                                </div>
+                                <div class="goods__tr-new-price text text--normal text--gray-700 text--w-regular">
+                                    <div class="goods__name-mobile">
+                                        Новая цена
+                                    </div>
+                                    <div class="goods__name">
+                                        190 000
+                                    </div>
+                                </div>
+                                <div class="goods__tr-order">
+                                    <a href="javascript:;" class="goods__tr-button button button--secondary">
+                                        Заказать
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="goods__tabs-content tabs__content" data-tab-content="2">
+                        <div class="goods__table d-flex d-flex-column">
+                            <div class="goods__th text text--normal text--gray-700 text--w-bold">
+                                <div class="goods__th-num text text--normal text--gray-700 text--w-bold">
+                                    №
+                                </div>
+                                <div class="goods__th-name text text--normal text--gray-700 text--w-bold">
+                                    Наименование товара
+                                </div>
+                                <div class="goods__th-quantity text text--normal text--gray-700 text--w-bold">
+                                    В&#160;наличии
+                                </div>
+                                <div class="goods__th-old-price text text--normal text--gray-700 text--w-bold">
+                                    Старая цена
+                                </div>
+                                <div class="goods__th-new-price text text--normal text--gray-700 text--w-bold">
+                                    Новая цена
+                                </div>
+                                <div class="goods__th-order text text--normal text--gray-700 text--w-bold">
+                                    Заказать
+                                </div>
+                            </div>
+                            <div class="goods__tr">
+                                <div class="goods__tr-num text text--normal text--gray-700 text--w-regular">
+                                    1
+                                </div>
+                                <div class="goods__tr-name text text--normal text--gray-700 text--w-regular">
+                                    Отвод сталь крутоизогнутый 90гр бесшовный ГОСТ 17375-2001
+                                </div>
+                                <div class="goods__tr-quantity text text--normal text--gray-700 text--w-regular">
+                                    <div class="goods__name-mobile">
+                                        В&#160;наличии
+                                    </div>
+                                    <div class="goods__name">
+                                        54
+                                    </div>
+                                </div>
+                                <div class="goods__tr-old-price text text--normal text--gray-700 text--w-regular">
+                                    <div class="goods__name-mobile">
+                                        Старая цена
+                                    </div>
+                                    <div class="goods__name">
+                                        155 000
+                                    </div>
+                                </div>
+                                <div class="goods__tr-new-price text text--normal text--gray-700 text--w-regular">
+                                    <div class="goods__name-mobile">
+                                        Новая цена
+                                    </div>
+                                    <div class="goods__name">
+                                        130 000
+                                    </div>
+                                </div>
+                                <div class="goods__tr-order">
+                                    <a href="javascript:;" class="goods__tr-button button button--secondary">
+                                        Заказать
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="goods__tr">
+                                <div class="goods__tr-num text text--normal text--gray-700 text--w-regular">
+                                    2
+                                </div>
+                                <div class="goods__tr-name text text--normal text--gray-700 text--w-regular">
+                                    Отвод сталь крутоизогнутый 190гр бесшовный ГОСТ 17375-2002
+                                </div>
+                                <div class="goods__tr-quantity text text--normal text--gray-700 text--w-regular">
+                                    <div class="goods__name-mobile">
+                                        В&#160;наличии
+                                    </div>
+                                    <div class="goods__name">
+                                        54421
+                                    </div>
+                                </div>
+                                <div class="goods__tr-old-price text text--normal text--gray-700 text--w-regular">
+                                    <div class="goods__name-mobile">
+                                        Старая цена
+                                    </div>
+                                    <div class="goods__name">
+                                        145 000
+                                    </div>
+                                </div>
+                                <div class="goods__tr-new-price text text--normal text--gray-700 text--w-regular">
+                                    <div class="goods__name-mobile">
+                                        Новая цена
+                                    </div>
+                                    <div class="goods__name">
+                                        120 000
+                                    </div>
+                                </div>
+                                <div class="goods__tr-order">
+                                    <a href="javascript:;" class="goods__tr-button button button--secondary">
+                                        Заказать
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="goods__tr">
+                                <div class="goods__tr-num text text--normal text--gray-700 text--w-regular">
+                                    3
+                                </div>
+                                <div class="goods__tr-name text text--normal text--gray-700 text--w-regular">
+                                    Отвод сталь крутоизогнутый 290гр бесшовный ГОСТ 17375-2014
+                                </div>
+                                <div class="goods__tr-quantity text text--normal text--gray-700 text--w-regular">
+                                    <div class="goods__name-mobile">
+                                        В&#160;наличии
+                                    </div>
+                                    <div class="goods__name">
+                                        6456
+                                    </div>
+                                </div>
+                                <div class="goods__tr-old-price text text--normal text--gray-700 text--w-regular">
+                                    <div class="goods__name-mobile">
+                                        Старая цена
+                                    </div>
+                                    <div class="goods__name">
+                                        255 000
+                                    </div>
+                                </div>
+                                <div class="goods__tr-new-price text text--normal text--gray-700 text--w-regular">
+                                    <div class="goods__name-mobile">
+                                        Новая цена
+                                    </div>
+                                    <div class="goods__name">
+                                        190 000
+                                    </div>
+                                </div>
+                                <div class="goods__tr-order">
+                                    <a href="javascript:;" class="goods__tr-button button button--secondary">
+                                        Заказать
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer class="footer">
+    <div class="footer__top">
+        <div class="footer__top-wrap container">
+            <div class="footer__top-inner d-flex flex-justify-sb flex-align-center">
+                <div class="footer__logo">
+                    <img src="./img/logo-footer.svg" alt="ЗСПА" class="footer__logo-img">
+                </div>
+                <div class="footer__contacts d-flex flex-justify-sb">
+                    <div class="footer__contact">
+                        <div class="footer__contact-name text text--tiny text--white text--w-regular">
+                            Почта:
+                        </div>
+                        <a href="mailto:Zakaz2@mail_ru" class="footer__contact-link title title--small title--accent title--w-bold">
+                            Zakaz2@mail_ru
+                        </a>
+                    </div>
+                    <div class="footer__contact">
+                        <div class="footer__contact-name text text--tiny text--white text--w-regular">
+                            Адрес:
+                        </div>
+                        <div class="footer__contact-link title title--small title--accent title--w-bold">
+                            Московская область, г.&#160;Щелково,
+                            ул.&#160;Советская &#189;, к2
+                        </div>
+                    </div>
+                    <div class="footer__contact">
+                        <div class="footer__contact-name text text--tiny text--white text--w-regular">
+                            Пн.-Пт.: 8:00&#160;&#8212; 19:00
+                        </div>
+                        <a href="tel:+7 (495) 877-37-83" class="footer__contact-link title title--pre-large title--accent title--w-bold">
+                            +7&#160;495&#160;877-37-83
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__body container">
+        <div class="footer__main d-flex flex-justify-sb">
+            <div class="footer__menu footer__menu--catalog">
+                <div class="footer__menu-name title title--pre-large title--dark title--w-bold title--uppercase">
+                    Каталог
+                </div>
+                <ul class="footer__menu-list">
+                    <li class="footer__menu-item">
+                        <a href="" class="footer__menu-link">
+                            Отводы
+                        </a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="" class="footer__menu-link">
+                            Тройники
+                        </a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="" class="footer__menu-link">
+                            Переходы
+                        </a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="" class="footer__menu-link">
+                            Фланцы
+                        </a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="" class="footer__menu-link">
+                            Заглушки
+                        </a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="" class="footer__menu-link">
+                            Днища
+                        </a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="" class="footer__menu-link">
+                            ППУ/ВУС изоляция
+                        </a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="" class="footer__menu-link">
+                            Фланцевые фасонные части
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__menu">
+                <div class="footer__menu-name title title--pre-large title--dark title--w-bold title--uppercase">
+                    Компания
+                </div>
+                <ul class="footer__menu-list">
+                    <li class="footer__menu-item">
+                        <a href="" class="footer__menu-link">
+                            О&#160;предприятии
+                        </a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="" class="footer__menu-link">
+                            Контроль качества
+                        </a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="" class="footer__menu-link">
+                            Сертификаты
+                        </a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="" class="footer__menu-link">
+                            Отгрузки
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__menu">
+                <div class="footer__menu-name title title--pre-large title--dark title--w-bold title--uppercase">
+                    Покупателям
+                </div>
+                <ul class="footer__menu-list">
+                    <li class="footer__menu-item">
+                        <a href="" class="footer__menu-link">
+                            Доставка и&#160;оплата
+                        </a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="" class="footer__menu-link">
+                            Акции
+                        </a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="" class="footer__menu-link">
+                            Калькуляторы
+                        </a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="" class="footer__menu-link">
+                            Статьи
+                        </a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="" class="footer__menu-link">
+                            Справочник ГОСТ, ОСТ, ТУ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom d-flex flex-justify-sb flex-align-center">
+            <div class="footer__copyright text text--normal text--dark text--w-regular d-flex">
+                <svg class="footer__copyright-svg" width="26px" height="20px">
+                    <use href="./img/svgsprite/sprite.symbol.svg#copyright"></use>
+                </svg>
+                2024 ЗСПА
+            </div>
+            <a href="/policy" class="footer__policy text text--normal text--dark text--w-regular">
+                Политика конфиденциальности
+            </a>
+            <a href="https://saitcraft.ru" class="footer__create text text--normal text--dark text--w-regular" target="_blank">
+                Сайткрафт&#160;&#8212; маркетинг на&#160;промышленном рынке
+            </a>
+        </div>
+    </div>
+</footer>
+
+<script src="./js/index.bundle.js"></script>
+</body>
+</html>
