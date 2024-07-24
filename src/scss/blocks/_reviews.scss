@@ -80,3 +80,12 @@
 .reviews__splide-pagination.splide__pagination .splide__pagination__page.is-active {
   background: var(--accent);
 }
+
+/* Reviews-product */
+.reviews.reviews--product {
+  padding-bottom: 64px;
+}
+
+.reviews.reviews--product .reviews__heading {
+  margin-bottom: 32px;
+}

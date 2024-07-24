@@ -97,3 +97,17 @@
 .wysiwyg a:hover {
   color: var(--accent);
 }
+
+.wysiwyg.wysiwyg--product ul li::before {
+  content: '⬤';
+  position: absolute;
+  top: 6px;
+  left: -15px;
+  font-size: 8px;
+  line-height: 1;
+}
+
+.wysiwyg.wysiwyg--product ul,
+.wysiwyg.wysiwyg--product ol {
+  padding-left: 25px;
+}

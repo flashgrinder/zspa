@@ -77,3 +77,13 @@
 .delivery__item-description {
   position: relative;
 }
+
+/* Delivery-product */
+.delivery.delivery--product {
+  background: var(--color-white);
+  padding: 0;
+}
+
+.delivery.delivery--product .delivery__item {
+  border: 1px solid #CCD2E3;
+}

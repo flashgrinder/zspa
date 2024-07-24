@@ -1,0 +1,121 @@
+.product-head {
+  background-color: #F5F9F8;
+  padding-bottom: 50px;
+}
+
+.product-head__wrap {
+  background-color: var(--color-white);
+  padding: 32px;
+  display: grid;
+  grid-template-columns: minmax(240px, 350px) 1fr minmax(235px, 250px);
+  gap: 32px;
+}
+
+.product-head__info-wrap {
+  padding-right: 32px;
+  border-right: 1px solid #CCD2E3;
+}
+
+.product-head__param {
+  column-count: 2;
+  column-gap: 24px;
+}
+
+.product-head__param + .product-head__param {
+  margin-top: 14px;
+}
+
+.product-head__features {
+  padding: 32px 24px;
+  margin-top: 32px;
+  background-color: #F5F9F8;
+  gap: 28px;
+}
+
+.product-head__item-features {
+  gap: 12px;
+}
+
+.product-head__item-features-icon {
+  width: 100%;
+  max-width: 24px;
+  max-height: 24px;
+}
+
+.product-head__item-features-svg {
+  fill: transparent;
+  stroke: var(--accent);
+}
+
+.product-head__price {
+  font-size: 38px;
+}
+
+.product-head__available {
+  position: relative;
+  margin-top: 14px;
+  padding-left: 17px;
+}
+
+.product-head__available.is-available::before,
+.product-head__available.is-none-available::before {
+  content: attr(data-value);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 8px;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  text-align: center;
+}
+
+.product-head__available.is-none-available::before {
+  background-color: #da3e58;
+  color: #da3e58;
+}
+
+.product-head__available.is-available::before {
+  background-color: #FDB022;
+  color: #FDB022;
+}
+
+.product-head__button {
+  margin-top: 24px;
+  width: 100%;
+  padding: 16px 24px 12px;
+}
+
+.product-head__contacts {
+  margin-top: 24px;
+  gap: 24px;
+}
+
+.product-head__contact {
+  gap: 12px;
+}
+
+.product-head__contact:hover .product-head__contact-name {
+  color: var(--accent);
+}
+
+.product-head__contact-icon {
+  max-width: 16px;
+  width: 100%;
+  margin-top: 2px;
+}
+
+.product-head__contact-icon-svg {
+  fill: transparent;
+  stroke: var(--accent);
+}
+
+.product-head__contact-name {
+  transition: color var(--hover-time) ease;
+}
+
+.product-head__contact-name,
+.product-head__contact-text {
+  display: block;
+}

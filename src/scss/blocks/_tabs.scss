@@ -23,14 +23,19 @@
 }
 
 .tabs__content {
+  position: relative;
   opacity: 0;
   visibility: hidden;
+  backface-visibility: hidden;
   height: 0;
   transition: opacity .500s ease-in-out;
+  z-index: -1;
 }
 
 .tabs__content.is-open {
   opacity: 1;
   visibility: visible;
   height: 100%;
+  backface-visibility: visible;
+  z-index: 10;
 }
