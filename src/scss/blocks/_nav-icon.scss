@@ -77,9 +77,9 @@
 /* Layout */
 
 .mobile-nav__btn {
-	z-index: 999;
-	 display: none;
+	z-index: 1001;
+	display: none;
 	@include tablet {
-		display: block;
+		display: flex;
 	}
 }

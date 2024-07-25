@@ -1,6 +1,9 @@
 .product-head {
   background-color: #F5F9F8;
   padding-bottom: 50px;
+  @include mobile {
+    padding-bottom: 24px;
+  }
 }
 
 .product-head__wrap {
@@ -9,11 +12,27 @@
   display: grid;
   grid-template-columns: minmax(240px, 350px) 1fr minmax(235px, 250px);
   gap: 32px;
+  @include mobile {
+    grid-template-columns: 1fr;
+    padding: 16px;
+  }
+}
+
+.product-head__picture,
+.product-head__photo {
+  @include mobile {
+    width: 100%;
+    display: none;
+  }
 }
 
 .product-head__info-wrap {
   padding-right: 32px;
   border-right: 1px solid #CCD2E3;
+  @include mobile {
+    padding-right: 0;
+    border-right: none;
+  }
 }
 
 .product-head__param {
@@ -30,6 +49,13 @@
   margin-top: 32px;
   background-color: #F5F9F8;
   gap: 28px;
+  @include mobile {
+    padding: 20px 12px;
+  }
+  @include mobileXS {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .product-head__item-features {

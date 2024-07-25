@@ -19,6 +19,10 @@
 	border-bottom: 1px solid #E0E0E0;
 	@include tablet {
 		border-bottom: none;
+		position: sticky;
+		top: 0;
+		z-index: 101;
+		background-color: var(--color-white);
 	}
 }
 

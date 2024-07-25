@@ -3,6 +3,11 @@
   gap: 45px;
   margin-bottom: 32px;
   border-bottom: 1px solid #D0D5DD;
+  @include mobile {
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 24px;
+  }
 }
 
 .tabs__button {
@@ -12,6 +17,10 @@
   font-size: 26px;
   margin-bottom: -2px;
   transition: color var(--hover-time) ease;
+  @include mobile {
+    white-space: nowrap;
+    font-size: 20px;
+  }
 }
 
 .tabs__button.is-active {
@@ -28,7 +37,7 @@
   visibility: hidden;
   backface-visibility: hidden;
   height: 0;
-  transition: opacity .500s ease-in-out;
+  transition: opacity .200s ease;
   z-index: -1;
 }
 

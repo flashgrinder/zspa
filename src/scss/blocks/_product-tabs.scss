@@ -12,6 +12,9 @@
 .product-tabs__bottom {
   margin-top: 64px;
   padding-bottom: 64px;
+  @include mobile {
+    margin-top: 32px;
+  }
 }
 
 .product-tabs__gallery-heading {

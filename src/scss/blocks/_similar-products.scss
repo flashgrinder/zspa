@@ -9,9 +9,10 @@
   gap: 12px;
   align-items: center;
   @include mobile {
-    padding: 0;
+    padding: 0 0 24px;
     grid-template-columns: 1fr;
     gap: 20px;
+    border-bottom: 1px solid #D0D5DD;
   }
 }
 
