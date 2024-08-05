@@ -1,0 +1,110 @@
+.form__field {
+  width: 100%;
+}
+
+.form__input {
+  padding: 18px 8px 18px 24px;
+  background-color: #F8F8F8;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  width: 100%;
+  font-size: 16px;
+  color: var(--color-medium-gray);
+}
+
+.form.form--main .form__input {
+  border: 1px solid #D9DADB;
+}
+
+.form__field .form__input:focus,
+.form__field .form__input:target,
+.form__field .form__input--textarea:focus,
+.form__field .form__input--textarea:target,
+.form__field .form__input--textarea:focus-visible {
+  border: 1px solid #3AAFA9;
+}
+
+.form__input--textarea {
+  resize: none;
+  outline: none;
+  max-height: 130px;
+}
+
+.form__input::placeholder,
+.form__input--textarea::placeholder {
+  @extend .text;
+  @extend .text--small;
+  @extend .text--light-gray;
+  @extend .text--w-regular;
+}
+
+.form__accept {
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.form__accept-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.form__accept-label::before {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid transparent;
+  margin-right: 0.5em;
+  background-color: #F5F5F5;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 20px 20px;
+}
+
+.form__checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.form__checkbox:checked + .form__accept-label::before {
+  border-color: #adb5bd;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjMiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAyMyAxOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEgOS42MDgxMUw3LjYxMTExIDE2LjVMMjIgMS41IiBzdHJva2U9IiMzQUFGQTkiIHN0cm9rZS13aWR0aD0iMiIvPgo8L3N2Zz4K");
+}
+
+/* стили при наведении курсора на checkbox */
+.form__checkbox:not(:disabled):not(:checked)+.form__accept-label:hover::before {
+  border-color: #3AAFA9;
+}
+/* стили для активного состояния чекбокса (при нажатии на него) */
+.form__checkbox:not(:disabled):active+.form__accept-label::before {
+  background-color: #b3d7ff;
+  border-color: #3AAFA9;
+}
+/* стили для чекбокса, находящегося в фокусе */
+.form__checkbox:focus+.form__accept-label::before {
+  box-shadow: 0 0 0 0.1rem rgba(58, 175, 169, 0.25);
+}
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+.form__checkbox:focus:not(:checked)+.form__accept-label::before {
+  border-color: #3AAFA9;
+}
+/* стили для чекбокса, находящегося в состоянии disabled */
+.form__checkbox:disabled+.form__accept-label::before {
+  background-color: #e9ecef;
+}
+
+.form__field .form__input.is-error,
+.form__field.is-error .form__input {
+  border-color: var(--color-invalid);
+}
+
+.form__field .form__input.is-error:focus,
+.form__field .form__input.is-error:target,
+.form__field.is-error .form__input:focus,
+.form__field.is-error .form__input:target {
+  border-color: #3AAFA9;
+}

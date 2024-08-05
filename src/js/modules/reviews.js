@@ -5,6 +5,7 @@ import '@splidejs/splide/css';
 function reviewsSlider () {
 
     const reviewsSliderTrue = document.querySelector('.js-reviews-init-slider');
+    const reviewsCatalogSliderTrue = document.querySelector('.js-reviews-catalog-init-slider');
     if (reviewsSliderTrue) {
         const reviewsSlider = new Splide( '.js-reviews-init-slider', {
             type   : 'loop',
@@ -49,6 +50,37 @@ function reviewsSlider () {
             }
         } );
         reviewsSlider.mount({ Grid });
+    }
+    if (reviewsCatalogSliderTrue) {
+        const reviewsCatalogSlider = new Splide( '.js-reviews-catalog-init-slider', {
+            type   : 'loop',
+            // height: '25rem',
+            perPage: 2,
+            // focus: 'center',
+            perMove: 1,
+            gap: '24px',
+            autoplay: false,
+            classes: {
+                arrows: 'splide__arrows reviews__splide-arrows',
+                arrow : 'splide__arrow reviews__splide-arrow',
+                prev  : 'splide__arrow--prev reviews__splide-arrow--prev',
+                next  : 'splide__arrow--next reviews__splide-arrow--next',
+            },
+            pagination: 'splide__pagination reviews__splide-pagination',
+            page      : 'splide__pagination__page reviews__splide-page',
+            breakpoints: {
+                576: {
+                    height: 'auto',
+                },
+                767: {
+                    perPage: 1
+                },
+                1024: {
+                    perPage: 3,
+                }
+            }
+        } );
+        reviewsCatalogSlider.mount();
     }
 
 }

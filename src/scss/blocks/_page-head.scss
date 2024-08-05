@@ -5,3 +5,25 @@
 .page-head.page-head--product {
   background-color: #F5F9F8;
 }
+
+.page-head__pic {
+  height: 165px;
+  background: url(../img/bg/stock-bg.png) no-repeat center;
+  background-size: cover;
+  border-radius: 3px;
+}
+
+.page-head__pic + .page-head__heading {
+  margin-top: 25px;
+}
+
+.page-head__heading + .page-head__usp {
+  margin-top: 16px;
+}
+
+.page-head__usp {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 22px;
+  padding-bottom: 32px;
+}

@@ -116,7 +116,7 @@
                         </div>
                     </div>
                 </div>
-                <a href="javascript:;" class="header__button button button--primary">
+                <a href="javascript:;" class="header__button button button--primary" data-hystmodal="#feedback">
                     Получить КП
                 </a>
             </div>
@@ -138,7 +138,7 @@
                         </button>
                     </div>
                 </form>
-                <a href="javascript:;" class="header__button button button--primary">
+                <a href="javascript:;" class="header__button button button--primary" data-hystmodal="#feedback">
                     Получить КП
                 </a>
             </div>
@@ -321,6 +321,54 @@
 
 </main>
 
+<section class="main-form b-padding-64">
+    <div class="main-form__body container">
+        <h3 class="main-form__heading title title--big title--dark title--w-bold text-center">
+            Получить КП
+        </h3>
+        <div class="main-form__subtitle text text--medium text--gray-600 text--w-regular text-center">
+            Наш менеджер перезвонит в&#160;течение 10 минут и&#160;предложит Вам лучший вариант.
+        </div>
+        <form action="" class="main-form__form form form--main">
+            <div class="main-form__wrapper-fields d-flex">
+                <label class="main-form__form-input form__field" for="main-form-name">
+                    <input class="main-form__form-input form__input" type="text" name="name" id="main-form-name"
+						   placeholder="Ваше имя">
+                </label>
+                <label class="main-form__form-input form__field" for="main-form-email">
+                    <input class="main-form__form-input form__input" type="email" name="email" id="main-form-email"
+						   placeholder="Ваш E—mail">
+                </label>
+                <label class="main-form__form-input form__field is-error" for="phone-feedback">
+                    <input class="main-form__form-input form__input" type="tel" name="phone" id="main-form-phone"
+						   placeholder="Ваш телефон">
+                </label>
+            </div>
+            <label class="main-form__form-input form__field" for="main-form-textarea">
+                <textarea class="main-form__text-area form__input form__input--textarea" name="message"
+						  id="main-form-textarea"
+						  cols="30" rows="10" placeholder="Текст сообщения"></textarea>
+            </label>
+            <div class="main-form__actions d-flex flex-justify-sb flex-align-center">
+                <div class="main-form__accept form__accept">
+                    <input class="main-form__checkbox form__checkbox" type="checkbox" id="main-form-agreement"
+						   name="agreement"
+						   checked>
+                    <label for="agreement-feedback"
+						   class="main-form__accept-label form__accept-label text text--normal text--dark text--w-regular">
+                        <span class="main-form__accept-text">
+                            Отправляя форму, я&#160;соглашаюсь с&#160;<a href="">политикой о&#160;персональных данных</a>
+                        </span>
+                    </label>
+                </div>
+                <button type="submit" class="main-form__form-button form__button button button--primary">
+                    Отправить
+                </button>
+            </div>
+        </form>
+    </div>
+</section>
+
 <footer class="footer">
     <div class="footer__top">
         <div class="footer__top-wrap container">
@@ -483,6 +531,169 @@
         </div>
     </div>
 </footer>
+
+<div class="modal modal--product hystmodal" id="feedback" aria-hidden="true">
+    <div class="modal__wrap hystmodal__wrap">
+        <div class="modal__body hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="modal__close hystmodal__close">Close</button>
+            <div class="modal__title title title--big title--dark title--w-bold text-center">
+                Получить коммерческое предложение
+            </div>
+            <div class="modal__subtitle text text--normal text--light-gray text--w-regular text-center">
+                Наш менеджер перезвонит в&#160;течение 10 минут для согласования заказа
+            </div>
+            <form action="" class="modal__form form d-flex d-flex-column">
+                <label class="modal__form-input form__field" for="name-feedback">
+                    <input class="modal__form-input form__input" type="text" name="name" id="name-feedback"
+						   placeholder="Ваше имя">
+                </label>
+                <label class="modal__form-input form__field is-error" for="phone-feedback">
+                    <input class="modal__form-input form__input" type="tel" name="phone" id="phone-feedback"
+						   placeholder="Ваш телефон">
+                </label>
+                <button type="submit" class="modal__form-button form__button button button--primary">
+                    Получить КП
+                </button>
+                <div class="modal__accept form__accept">
+                    <input class="modal__checkbox form__checkbox" type="checkbox" id="agreement-feedback"
+						   name="agreement"
+						   checked>
+                    <label for="agreement-feedback"
+						   class="modal__accept-label form__accept-label text text--normal text--dark text--w-regular">
+                        <span class="modal__accept-text">
+                            Отправляя форму, я&#160;соглашаюсь с&#160;<a href="">политикой о&#160;персональных данных</a>
+                        </span>
+                    </label>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal modal--product hystmodal" id="product-modal" aria-hidden="true">
+    <div class="modal__wrap hystmodal__wrap">
+        <div class="modal__body hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="modal__close hystmodal__close">Close</button>
+            <div class="modal__title title title--big title--dark title--w-bold text-center">
+                Получить КП
+            </div>
+            <div class="modal__subtitle text text--normal text--light-gray text--w-regular text-center">
+                Наш менеджер перезвонит в&#160;течение 10 минут для согласования заказа
+            </div>
+            <div class="modal__product">
+                <div class="modal__product-pic">
+                    <img src="./img/other/product-img.png" alt="" class="modal__product-img">
+                </div>
+                <div class="modal__product-name text text--normal text--gray-600 text--w-bold">
+                    Отвод сталь крутоизогнутый 90гр бесшовный ГОСТ 17375-2001
+                </div>
+            </div>
+            <form action="" class="modal__form form d-flex d-flex-column">
+                <label class="modal__form-input form__field" for="name">
+                    <input class="modal__form-input form__input" type="text" name="name" id="name"
+						   placeholder="Ваше имя">
+                </label>
+                <label class="modal__form-input form__field is-error" for="phone">
+                    <input class="modal__form-input form__input" type="tel" name="phone" id="phone"
+						   placeholder="Ваш телефон">
+                </label>
+                <button type="submit" class="modal__form-button form__button button button--primary">
+                    Отправить
+                </button>
+                <div class="modal__accept form__accept">
+                    <input class="modal__checkbox form__checkbox" type="checkbox" id="agreement-modal" name="agreement"
+						   checked>
+                    <label for="agreement-modal"
+						   class="modal__accept-label form__accept-label text text--normal text--dark text--w-regular">
+                        <span class="modal__accept-text">
+                            Отправляя форму, я&#160;соглашаюсь с&#160;<a href="">политикой о&#160;персональных данных</a>
+                        </span>
+                    </label>
+                </div>
+                <input type="hidden" name="name-product">
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal modal--product-info hystmodal" id="product-info" aria-hidden="true">
+    <div class="modal__wrap hystmodal__wrap">
+        <div class="modal__body hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="modal__close hystmodal__close">Close</button>
+            <div class="modal__product-pic">
+                <img src="./img/other/product-img.png" alt="" class="modal__product-img">
+            </div>
+            <div class="modal__title text text--medium text--gray-600 text--w-bold">
+                Отвод сталь крутоизогнутый 90гр бесшовный ГОСТ 17375-2001
+            </div>
+            <div class="modal__product-props">
+                <div class="modal__product-param">
+                    <div class="modal__product-param-name text text--small text--gray-400 text--w-regular">
+                        Марка стали:
+                    </div>
+                    <div class="modal__product-param-value text text--small text--gray-500 text--w-regular">
+                        сталь&#160;20
+                    </div>
+                </div>
+                <div class="modal__product-param">
+                    <div class="modal__product-param-name text text--small text--gray-400 text--w-regular">
+                        Наружный диаметр, мм:
+                    </div>
+                    <div class="modal__product-param-value text text--small text--gray-500 text--w-regular">
+                        34
+                    </div>
+                </div>
+                <div class="modal__product-param">
+                    <div class="modal__product-param-name text text--small text--gray-400 text--w-regular">
+                        Толщина стенки, мм:
+                    </div>
+                    <div class="modal__product-param-value text text--small text--gray-500 text--w-regular">
+                        2,4
+                    </div>
+                </div>
+                <div class="modal__product-param">
+                    <div class="modal__product-param-name text text--small text--gray-400 text--w-regular">
+                        Угол наклона, градусы
+                    </div>
+                    <div class="modal__product-param-value text text--small text--gray-500 text--w-regular">
+                        15
+                    </div>
+                </div>
+            </div>
+            <div class="modal__product-action d-flex">
+                <a href="/prod/product.html" class="modal__product-button button button--thirty">
+                    Подробнее
+                </a>
+                <a href="javascript:;" class="modal__product-button button button--primary"
+				   data-hystmodal="#product-modal">
+                    Запросить КП
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal modal--catalog-filter hystmodal" id="catalog-filter" aria-hidden="true">
+    <div class="modal__wrap hystmodal__wrap">
+        <div class="modal__body hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="modal__close hystmodal__close">Close</button>
+            <div class="modal__title title title--medium title--dark title--w-bold">
+                Фильтр
+            </div>
+            <div class="modal__filters">
+                Всякие фильтры
+            </div>
+            <div class="modal__catalog-action d-flex">
+                <a href="javascript:;" class="modal__catalog-button button button--thirty">
+                    Сбросить
+                </a>
+                <a href="javascript:;" class="modal__catalog-button button button--primary">
+                    Искать
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script src="./js/index.bundle.js"></script>
 </body>

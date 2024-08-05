@@ -79,3 +79,57 @@
 .shipments.shipments--product .shipments__button {
   padding: 16px 24px;
 }
+
+/* Shipments-catalog */
+.shipments.shipments--catalog {
+  padding: 80px 0 48px;
+  background-color: #F9FAFB;
+  border-top: 1px solid #E0E0E0;
+}
+
+.shipments__splide-arrows.splide__arrows {
+  @include mobile {
+    display: none;
+  }
+}
+
+.shipments__splide-arrow.splide__arrow {
+  border-radius: 0;
+  background-color: transparent;
+  padding: 0;
+  height: auto;
+  width: auto;
+}
+
+.splide__arrow .shipments__arrow-icon {
+  fill: transparent;
+  stroke: var(--color-dark);
+  height: 24px;
+  width: 24px;
+}
+
+.shipments__splide-arrow.shipments__splide-arrow--prev .shipments__arrow-icon {
+  transform: rotate(0deg);
+}
+
+.shipments__splide-arrow.splide__arrow--next {
+  right: -2em;
+  @include mobileXS {
+    right: 1em;
+  }
+}
+
+.shipments__splide-arrow.splide__arrow--prev {
+  left: -2em;
+  @include mobileXS {
+    left: 1em;
+  }
+}
+
+.shipments__splide-pagination.splide__pagination {
+  bottom: -50px;
+  gap: 14px;
+}
+.shipments__splide-pagination.splide__pagination .splide__pagination__page.is-active {
+  background: var(--accent);
+}

@@ -4,6 +4,8 @@ import gallerySlider from "./modules/gallery-slider";
 import zoomImg from "./modules/zoomImg";
 import customTabs from "./modules/tabs";
 import reviewsSlider from "./modules/reviews";
+import shipmentsSlider from "./modules/shipments-slider";
+import productModal from "./modules/product-modal";
 
 document.addEventListener('DOMContentLoaded', ()=> {
 
@@ -14,6 +16,8 @@ document.addEventListener('DOMContentLoaded', ()=> {
     zoomImg();
     customTabs();
     reviewsSlider();
+    shipmentsSlider();
+    productModal();
 
 })
 

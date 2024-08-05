@@ -1,0 +1,43 @@
+.main-form {
+  border-top: 1px solid #E0E0E0;
+}
+
+.main-form__subtitle {
+  margin-top: 8px;
+}
+
+.main-form__form {
+  margin: 32px auto 0;
+  max-width: 952px;
+}
+
+.main-form__wrapper-fields {
+  gap: 15px;
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
+.main-form__text-area,
+.main-form__actions {
+  margin-top: 15px;
+}
+
+.main-form__actions {
+  gap: 30px;
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
+.main-form__accept {
+  margin: 0;
+  @include mobile {
+    order: 1;
+  }
+}
+
+.main-form__form-button {
+  max-width: 342px;
+  width: 100%;
+}

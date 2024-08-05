@@ -142,7 +142,9 @@
 }
 
 .header__top-wrap.container {
-	padding: 0;
+	@include tablet {
+		padding: 0;
+	}
 }
 
 .header__button-mobile-wrap {
