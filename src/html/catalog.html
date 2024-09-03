@@ -34,15 +34,15 @@
     <div class="catalog__body container">
         <div class="catalog__outer">
             <div class="catalog__wrap-products">
-                <div class="catalog__products">
+                <div class="catalog__products js-catalog-products">
                     <article class="catalog__product">
-                        <picture class="catalog__product-pic">
-                            <img src="./img/other/product-img.png" alt="" class="catalog__product-img">
+                        <picture class="catalog__product-pic js-catalog-product-pic">
+                            <img src="./img/other/product-img.png" alt="" class="catalog__product-img js-product-img">
                         </picture>
-                        <div class="catalog__product-info">
+                        <div class="catalog__product-info js-catalog-product-info">
                             <a href="product.html" class="catalog__product-link">
-                                <h3 class="catalog__product-title text text--medium text--gray-600 text--w-bold">
-                                    Отвод сталь крутоизогнутый 90гр бесшовный ГОСТ 17375-2001
+                                <h3 class="catalog__product-title text text--medium text--gray-600 text--w-bold js-product-title" data-title="432">
+                                    Отвод сталь крутоизогнутый 290гр бесшовный ГОСТ 17375-2001
                                 </h3>
                             </a>
                             <div class="catalog__product-props">
@@ -72,7 +72,7 @@
                                 </div>
                                 <div class="catalog__product-param">
                                     <div class="catalog__product-param-name text text--small text--gray-400 text--w-regular">
-                                        Угол наклона, градусы
+                                        Угол наклона, градусы 1
                                     </div>
                                     <div class="catalog__product-param-value text text--small text--gray-500 text--w-regular">
                                         15
@@ -101,13 +101,14 @@
                         </div>
                     </article>
                     <article class="catalog__product">
-                        <picture class="catalog__product-pic">
-                            <img src="./img/other/product-img.png" alt="" class="catalog__product-img">
+                        <picture class="catalog__product-pic js-catalog-product-pic">
+                            <img src="./img/other/similar-products-1.png" alt="" class="catalog__product-img">
                         </picture>
-                        <div class="catalog__product-info">
+                        <div class="catalog__product-info js-catalog-product-info">
                             <a href="product.html" class="catalog__product-link">
-                                <h3 class="catalog__product-title text text--medium text--gray-600 text--w-bold">
-                                    Отвод сталь крутоизогнутый 90гр бесшовный ГОСТ 17375-2001
+                                <h3 class="catalog__product-title text text--medium text--gray-600 text--w-bold"
+                                    data-title="4332">
+                                    Отвод сталь крутоизогнутый 190гр бесшовный ГОСТ 17375-2001
                                 </h3>
                             </a>
                             <div class="catalog__product-props">
@@ -137,7 +138,7 @@
                                 </div>
                                 <div class="catalog__product-param">
                                     <div class="catalog__product-param-name text text--small text--gray-400 text--w-regular">
-                                        Угол наклона, градусы
+                                        Угол наклона, градусы 2
                                     </div>
                                     <div class="catalog__product-param-value text text--small text--gray-500 text--w-regular">
                                         15
@@ -146,7 +147,7 @@
                             </div>
                         </div>
                         <div class="catalog__product-block-actions">
-                            <a href="javascript:;" class="catalog__product-button-info">
+                            <a href="javascript:;" class="catalog__product-button-info" data-hystmodal="#product-info">
                                 <svg class="catalog__product-button-info-icon" width="24px" height="24px">
                                     <use href="./img/svgsprite/sprite.symbol.svg#info-product"></use>
                                 </svg>
@@ -159,16 +160,16 @@
                                     В наличии
                                 </div>
                             </div>
-                            <a href="javascript:;" class="catalog__product-button button button--secondary">
+                            <a href="javascript:;" class="catalog__product-button button button--secondary" data-hystmodal="#product-modal">
                                 Получить КП
                             </a>
                         </div>
                     </article>
                     <article class="catalog__product">
-                        <picture class="catalog__product-pic">
+                        <picture class="catalog__product-pic js-catalog-product-pic">
                             <img src="./img/other/product-img.png" alt="" class="catalog__product-img">
                         </picture>
-                        <div class="catalog__product-info">
+                        <div class="catalog__product-info js-catalog-product-info">
                             <a href="product.html" class="catalog__product-link">
                                 <h3 class="catalog__product-title text text--medium text--gray-600 text--w-bold">
                                     Отвод сталь крутоизогнутый 90гр бесшовный ГОСТ 17375-2001
@@ -201,7 +202,7 @@
                                 </div>
                                 <div class="catalog__product-param">
                                     <div class="catalog__product-param-name text text--small text--gray-400 text--w-regular">
-                                        Угол наклона, градусы
+                                        Угол наклона, градусы 3
                                     </div>
                                     <div class="catalog__product-param-value text text--small text--gray-500 text--w-regular">
                                         15
@@ -210,7 +211,7 @@
                             </div>
                         </div>
                         <div class="catalog__product-block-actions">
-                            <a href="javascript:;" class="catalog__product-button-info">
+                            <a href="javascript:;" class="catalog__product-button-info" data-hystmodal="#product-info">
                                 <svg class="catalog__product-button-info-icon" width="24px" height="24px">
                                     <use href="./img/svgsprite/sprite.symbol.svg#info-product"></use>
                                 </svg>
@@ -223,7 +224,7 @@
                                     В наличии
                                 </div>
                             </div>
-                            <a href="javascript:;" class="catalog__product-button button button--secondary">
+                            <a href="javascript:;" class="catalog__product-button button button--secondary" data-hystmodal="#product-modal">
                                 Получить КП
                             </a>
                         </div>

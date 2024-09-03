@@ -44,7 +44,7 @@
 }
 
 .catalog__product {
-  padding: 32px 0 16px 32px;
+  padding: 32px 16px;
   display: grid;
   grid-template-columns: 144px 1fr 172px;
   @include tablet {
@@ -115,7 +115,7 @@
   @include mobile {
     display: block;
     right: 16px;
-    top: 30px;
+    top: 16px;
   }
 }
 
@@ -163,8 +163,8 @@
 
 .catalog__product-param {
   display: grid;
-  grid-template-columns: 170px 70px;
-  gap: 10px 32px;
+  grid-template-columns: repeat(2, minmax(150px, 1fr));
+  gap: 10px;
 }
 
 .catalog__product-param + .catalog__product-param{

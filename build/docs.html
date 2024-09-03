@@ -743,13 +743,14 @@
             </div>
             <div class="modal__product">
                 <div class="modal__product-pic">
-                    <img src="./img/other/product-img.png" alt="" class="modal__product-img">
+                    <img src="./img/other/product-img.png" alt="" class="modal__product-img js-product-img-modal">
                 </div>
-                <div class="modal__product-name text text--normal text--gray-600 text--w-bold">
+                <div class="modal__product-name text text--normal text--gray-600 text--w-bold js-product-title-modal">
                     Отвод сталь крутоизогнутый 90гр бесшовный ГОСТ 17375-2001
                 </div>
             </div>
             <form action="" class="modal__form form d-flex d-flex-column">
+                <input type="hidden" name="product" class="js-input-product">
                 <label class="modal__form-input form__field" for="name">
                     <input class="modal__form-input form__input" type="text" name="name" id="name"
 						   placeholder="Ваше имя">
@@ -782,9 +783,9 @@
         <div class="modal__body hystmodal__window" role="dialog" aria-modal="true">
             <button data-hystclose class="modal__close hystmodal__close">Close</button>
             <div class="modal__product-pic">
-                <img src="./img/other/product-img.png" alt="" class="modal__product-img">
+                <img src="./img/other/product-img.png" alt="" class="modal__product-img js-product-info-img-modal">
             </div>
-            <div class="modal__title text text--medium text--gray-600 text--w-bold">
+            <div class="modal__title text text--medium text--gray-600 text--w-bold js-product-info-title-modal">
                 Отвод сталь крутоизогнутый 90гр бесшовный ГОСТ 17375-2001
             </div>
             <div class="modal__product-props">
