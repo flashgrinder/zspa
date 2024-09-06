@@ -64,6 +64,25 @@
   left: -25px;
 }
 
+.wysiwyg table {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid var(--color-light-gray);
+  border-collapse: collapse;
+}
+
+.wysiwyg table th {
+  font-weight: bold;
+  padding: 5px;
+  background: #efefef;
+  border: 1px solid var(--color-light-gray);
+}
+
+.wysiwyg table td {
+  border: 1px solid var(--color-light-gray);
+  padding: 5px;
+}
+
 .wysiwyg.wysiwyg--delivery ul li {
   list-style-type: disc;
 }
