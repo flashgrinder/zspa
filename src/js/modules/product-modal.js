@@ -41,6 +41,18 @@ function productPopup() {
         })
     })
 
+    let formsElem = document.querySelectorAll( '.js-form' );
+
+    formsElem.forEach(function(elem) {
+
+        elem.addEventListener( 'submit', function( e ) {
+
+            modalProduct.open('.js-modal-success');
+
+        }, false );
+
+    });
+
     const modalProduct = new HystModal({
         linkAttributeName: "data-hystmodal",
     })
