@@ -13,12 +13,13 @@ function productPopup() {
     const modalInfoProps = document.querySelector(".modal__product-props");
 
     itemList.forEach(items => {
-        const elements = [...items.children]
-        // console.log(elements);
+        const elements = [...items.children];
+
         elements.forEach(item => {
             item.addEventListener('click', () => {
                 const itemImg = item.querySelector(".js-catalog-product-pic").getElementsByTagName("img")[0].src;
                 const itemTitle = item.querySelector(".js-catalog-product-info").getElementsByTagName("h3")[0].innerText;
+                const productId = item.querySelector(".js-product-id").dataset.productId;
 
                 const itemParamName = Array.from(item.querySelectorAll('.catalog__product-param-name'));
                 const itemParamValue = Array.from(item.querySelectorAll('.catalog__product-param-value'));
@@ -31,13 +32,11 @@ function productPopup() {
 
                 titleModal.innerHTML = itemTitle;
                 titleInfoModal.innerHTML = itemTitle;
-                inputModal.value = itemTitle;
+                inputModal.value = productId;
 
                 imgModal.src = itemImg;
                 imgInfoModal = itemImg;
 
-                // console.log(itemTitle);
-                // console.log(itemParamName);
             })
         })
     })
