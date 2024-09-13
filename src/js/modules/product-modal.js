@@ -2,44 +2,154 @@ import HystModal from "hystmodal";
 import $ from "jquery";
 function productPopup() {
 
-    const itemList = Array.from(document.querySelectorAll('.js-catalog-products'));
-    const titleModal = document.querySelector('.js-product-title-modal');
-    const imgModal = document.querySelector('.js-product-img-modal');
-    const inputModal = document.querySelector('.js-input-product');
+    const btns = document.querySelectorAll('.js-catalog-product-btn')
+    const btnsMobile = document.querySelectorAll('.js-catalog-product-info-btn')
 
-    let imgInfoModal = document.querySelector('.js-product-info-img-modal');
-    const titleInfoModal = document.querySelector('.js-product-info-title-modal');
+    btns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            const imgProduct = this.getAttribute('data-imgtovara')
+            const nameTitle = this.getAttribute('data-nametitle')
+            const productId = this.getAttribute('data-product-id')
+            const img = document.querySelector('.js-product-img-modal')
+            const productName = document.querySelector('.js-product-title-modal')
+            const modalProductId = document.querySelector('.js-input-product')
 
-    // const modalInfoProps = document.querySelector(".modal__product-props");
+            // console.log(productId);
+            // Очищаем существующие данные перед добавлением новых
+            productName.innerHTML = ''
 
-    itemList.forEach(items => {
-        const elements = [...items.children];
-
-        elements.forEach(item => {
-            item.addEventListener('click', () => {
-                const itemImg = item.querySelector(".js-catalog-product-pic").getElementsByTagName("img")[0].src;
-                const itemTitle = item.querySelector(".js-catalog-product-info").getElementsByTagName("h3")[0].innerText;
-                const productId = item.querySelector(".js-product-id").dataset.productId;
-
-                // const itemParamName = Array.from(item.querySelectorAll('.catalog__product-param-name'));
-                // const itemParamValue = Array.from(item.querySelectorAll('.catalog__product-param-value'));
-                //
-                // itemParamName.forEach(itemModal => {
-                //     modalInfoProps.innerHTML = `<div class="modal__product-param-name text text--small text--gray-400 text--w-regular">
-                //                                 ${itemModal.innerText}:
-                //                             </div>`;
-                // })
-
-                titleModal.innerHTML = itemTitle;
-                titleInfoModal.innerHTML = itemTitle;
-                inputModal.value = productId;
-
-                imgModal.src = itemImg;
-                imgInfoModal = itemImg;
-
-            })
+            // Добавляем новые данные в модальное окно
+            img.src = imgProduct
+            img.alt = '...'
+            productName.innerHTML = nameTitle
+            modalProductId.value = productId
         })
     })
+
+    function getDataFromHTML(container) {
+        // console.log('Обработка контейнера:', container)
+        let result = {}
+
+        if (!container) {
+            console.warn('Контейнер не найден')
+            return {}
+        }
+
+        container.querySelectorAll('.js-catalog-product-param').forEach(param => {
+            let name = param.querySelector('.js-product-param')?.textContent.trim() || ''
+            let value = param.querySelector('.js-product-value')?.textContent.trim() || ''
+
+            // console.log('Параметр:', { name, value })
+            // Преобразуем ключ в camelCase
+            let camelKey = name.split('').join('')
+
+            // Преобразуем значение в число, если возможно
+            if (!isNaN(value.replace(',', '.')) && value !== '') {
+                value = parseFloat(value.replace(',', '.'))
+            }
+
+            // console.log('Данные:', result)
+            result[camelKey] = value
+        })
+
+        return result
+    }
+
+    function fillModalWithData(data) {
+        const modalInfoProps = document.querySelector('.js-modal-product-props')
+
+        // Очищаем существующие данные перед добавлением новых
+        modalInfoProps.innerHTML = ''
+
+        // Добавляем новые данные в модальное окно
+        Object.entries(data).forEach(([key, value]) => {
+            const paramElement = document.createElement('div')
+            paramElement.className = 'modal__product-param'
+            const nameElement = document.createElement('div')
+            nameElement.className =
+                'modal__product-param-name text text--small text--gray-400 text--w-regular js-product-param'
+            nameElement.textContent = key
+            const valueElement = document.createElement('div')
+            valueElement.className =
+                'modal__product-param-value text text--small text--gray-500 text--w-regular js-product-value'
+            valueElement.textContent = value
+
+            paramElement.appendChild(nameElement)
+            paramElement.appendChild(valueElement)
+            modalInfoProps.appendChild(paramElement)
+        })
+    }
+
+    btnsMobile.forEach(function (btn) {
+        // console.log('Нажата кнопка:', btn)
+        btn.addEventListener('click', function () {
+            const nameTitle = this.getAttribute('data-nametitleMobile')
+            const imgProduct = this.getAttribute('data-imgtovaraMobile')
+            const imgModal = document.querySelector('.js-product-info-img-modal')
+            const productName = document.querySelector('.js-product-info-title-modal')
+
+            // console.log('Кнопка информации нажата')
+
+            // Очищаем существующие данные перед добавлением новых
+            productName.innerHTML = ''
+
+            // Добавляем новые данные в модальное окно
+            imgModal.src = imgProduct
+            imgModal.alt = '...'
+            productName.innerHTML = nameTitle
+
+            // Получаем данные из HTML
+            let container = btn.closest('.js-catalog-product')
+            if (!container) {
+                console.error('Контейнер с продуктом не найден')
+                return
+            }
+            let data = getDataFromHTML(container)
+            // console.log('Получены данные:', data)
+
+            // Заполняем модальное окно данными
+            fillModalWithData(data)
+        })
+    })
+
+    // const itemList = Array.from(document.querySelectorAll('.js-catalog-products'));
+    // const titleModal = document.querySelector('.js-product-title-modal');
+    // const imgModal = document.querySelector('.js-product-img-modal');
+    // const inputModal = document.querySelector('.js-input-product');
+    //
+    // let imgInfoModal = document.querySelector('.js-product-info-img-modal');
+    // const titleInfoModal = document.querySelector('.js-product-info-title-modal');
+    //
+    // // const modalInfoProps = document.querySelector(".modal__product-props");
+    //
+    // itemList.forEach(items => {
+    //     const elements = [...items.children];
+    //
+    //     elements.forEach(item => {
+    //         item.addEventListener('click', () => {
+    //             const itemImg = item.querySelector(".js-catalog-product-pic").getElementsByTagName("img")[0].src;
+    //             const itemTitle = item.querySelector(".js-catalog-product-info").getElementsByTagName("h3")[0].innerText;
+    //             const productId = item.querySelector(".js-product-id").dataset.productId;
+    //
+    //             // const itemParamName = Array.from(item.querySelectorAll('.catalog__product-param-name'));
+    //             // const itemParamValue = Array.from(item.querySelectorAll('.catalog__product-param-value'));
+    //             //
+    //             // itemParamName.forEach(itemModal => {
+    //             //     modalInfoProps.innerHTML = `<div class="modal__product-param-name text text--small text--gray-400 text--w-regular">
+    //             //                                 ${itemModal.innerText}:
+    //             //                             </div>`;
+    //             // })
+    //
+    //             titleModal.innerHTML = itemTitle;
+    //             titleInfoModal.innerHTML = itemTitle;
+    //             inputModal.value = productId;
+    //
+    //             imgModal.src = itemImg;
+    //             imgInfoModal = itemImg;
+    //
+    //         })
+    //     })
+    // })
 
     const modalProduct = new HystModal({
         linkAttributeName: "data-hystmodal",
