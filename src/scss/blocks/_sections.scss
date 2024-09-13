@@ -5,10 +5,14 @@
   }
 }
 
+.sections.sections--catalog .sections__items {
+  margin-top: 0;
+}
+
 .sections__items {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: 24px;
   margin-top: -100px;
   @include mobile {
