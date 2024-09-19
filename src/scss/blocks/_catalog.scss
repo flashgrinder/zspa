@@ -13,6 +13,7 @@
 }
 
 .catalog__aside {
+  order: 1;
   @include tablet {
     order: -1;
   }

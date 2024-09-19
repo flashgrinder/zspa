@@ -71,6 +71,7 @@
 
 .news__sidebar {
   max-width: 302px;
+  min-width: 302px;
   width: 100%;
   @include tablet {
     max-width: 100%;
