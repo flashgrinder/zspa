@@ -52,15 +52,11 @@
   gap: 15px;
   justify-content: space-between;
   align-items: center;
-  @include tablet {
-    padding: 16px 16px 16px 12px;
-    grid-template-columns: 60px 1fr 172px;
-  }
   @include mobile {
     position: relative;
     grid-template:
-      "img info"
-      "price actions";
+      "img info info"
+      "price actions actions";
     column-gap: 16px;
   }
 }
