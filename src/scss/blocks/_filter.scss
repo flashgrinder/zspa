@@ -22,7 +22,6 @@
 .filter.filter--modal .filter__window {
 	@include mobile {
 		width: 100%;
-		max-width: 400px;
 		padding: 16px;
 		opacity: 0;
 		transform: scale(0.95);
@@ -37,8 +36,8 @@
 	}
 }
 
-.filter__modal-title,
-.filter__close {
+.filter.filter--modal .filter__modal-title,
+.filter.filter--modal .filter__close {
 	display: none;
 	@include mobile {
 		display: block;
