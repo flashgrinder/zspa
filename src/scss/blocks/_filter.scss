@@ -1,3 +1,64 @@
+.filter.filter--modal {
+	visibility: visible;
+	position: static;
+	pointer-events: visible;
+	display: block;
+	@include mobile {
+		display: grid;
+		overflow-y: auto;
+		pointer-events: none;
+		visibility: hidden;
+		position: fixed;
+	}
+}
+
+.filter.filter--modal.hystmodal--active {
+	@include mobile {
+		visibility: visible;
+		pointer-events: visible;
+	}
+}
+
+.filter.filter--modal .filter__window {
+	@include mobile {
+		width: 100%;
+		max-width: 400px;
+		padding: 16px;
+		opacity: 0;
+		transform: scale(0.95);
+		margin: 50px auto;
+	}
+}
+
+.filter.filter--modal.hystmodal--active .filter__window {
+	@include mobile {
+		transform: none;
+		opacity: 1;
+	}
+}
+
+.filter__modal-title,
+.filter__close {
+	display: none;
+	@include mobile {
+		display: block;
+	}
+}
+
+.filter.filter--modal .filter__close {
+	top: 20px;
+	right: 20px;
+	width: 20px;
+	height: 20px;
+}
+
+.filter.filter--modal .filter__window {
+	opacity: 1;
+	width: 100%;
+	transform: scale(1);
+	margin: 0;
+}
+
 .filter__bx-param-box-container {
 	max-height: 150px;
 	overflow-y: auto;
